@@ -1,6 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+  font-family: "Maven Pro";
+  src: url(../fonts/MavenPro-Regular.ttf);
+}
+@font-face {
+  font-family: "Maven Pro";
+  src: url(../fonts/MavenPro-Bold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Abel";
+  src: url(../fonts/Abel-Regular.ttf);
+}
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -24,4 +37,9 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+
+.MuiTypography-root{
+  font-family: "Abel";
 }

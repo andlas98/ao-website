@@ -39,7 +39,49 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-
 .MuiTypography-root{
-  font-family: "Abel";
+  font-family: "Maven Pro";
+}
+
+.navbarAppBar{
+  box-shadow: 0px 4px 4px 0px rgba(170, 168, 168, 0.25);
+}
+
+.navbarButton{
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  color: white;
+}
+
+.navbarButton:last-child{
+  margin-right: 0;
+}
+
+.navbarButton:hover{
+  background-color: gray;
+}
+
+
+.logoText{
+  font-size: 2rem;
+  margin-top: auto;
+  margin-bottom: auto;
+  line-height: 1.875rem;
+  padding-left: 0.75rem;
+}
+
+.logoCircle{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 600px){
+  .MuiToolbar-root.navbarToolbar{
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
 }

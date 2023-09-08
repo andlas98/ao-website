@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @font-face {
   font-family: "Maven Pro";
   src: url(../fonts/MavenPro-Regular.ttf);
@@ -21,12 +22,47 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+.MuiTypography-root{
+  font-family: "Maven Pro";
+}
+
+.sectionHeader{
+  font-size: 3.25rem;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 2.688rem;
+  margin-bottom: 2.688rem;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
+    --deep-red: #ED2929;
   }
+  
+  .sectionHeader{
+    color: var(--deep-red);
+  }
+
+  .bgPaper{
+    background-color: #0E0E0E; 
+  }
+
+  .fgPaper{
+    background-color: #141414;
+    color: white;
+  }
+}
+
+.MuiTypography-body1{
+  font-size: 2rem;
+  line-height: 2.375rem;
+}
+
+.MuiTypography-body2{
+  font-size: 1.5rem;
 }
 
 body {
@@ -39,12 +75,9 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-.MuiTypography-root{
-  font-family: "Maven Pro";
-}
-
 .navbarAppBar{
   box-shadow: 0px 4px 4px 0px rgba(170, 168, 168, 0.25);
+  position: relative;
 }
 
 .navbarButton{
@@ -78,10 +111,48 @@ body {
   margin-bottom: 1rem;
 }
 
+.layeredPaperDiv{
+  position: relative;
+}
+
+.bgPaper, .fgPaper {
+  width: 100%;
+  border-radius: 10px;
+  font-size: 2rem;
+  padding: 3rem 2.813rem 3rem 2.813rem;
+  box-shadow: none;
+}
+
+.bgPaper > .MuiTypography-root{color: transparent;}
+
+.fgPaper {
+  position: absolute;
+}
+
+.bgPaper{
+  margin-top: 1.5rem;
+  position: absolute;
+  margin-left: 1.5rem;
+}
+
+.splashSectionBox .aboutSectionBox{
+  position: relative;
+}
+
+.splashSectionBox{
+  display: flex;
+  align-content: space-between;
+  justify-content: space-between;
+  margin-bottom: 6.438rem;
+}
+
+.lavaLampBox, .splashLayeredPaperBox{
+  width: 50%;
+}
+
 @media (min-width: 600px){
   .MuiToolbar-root.navbarToolbar{
     padding-left: 5rem;
     padding-right: 5rem;
   }
-
 }

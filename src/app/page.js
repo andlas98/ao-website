@@ -1,6 +1,5 @@
 import React from 'react';
 import {Box, Typography, Button} from '@mui/material';
-import Image from 'next/image';
 import Navbar from '@/components/navbar';
 import LayeredPaper from '@/components/layeredPaper';
 import LavaBlob from '@/components/lavaBlob';
@@ -12,7 +11,7 @@ export default function Home() {
 
   const splashIntro = (
     <Typography variant='body1'>
-      Hi! My name is Andrew Ohakam. I am a frontend developer creating web experiences.
+      Hi! My name is <span className='deepColor'>Andrew Ohakam</span>. I am a frontend developer creating <span className='deepColor'>web experiences</span>.
     </Typography>
   );
 
@@ -42,14 +41,14 @@ export default function Home() {
         <Box className="aboutSectionBox">
           <Typography className='sectionHeader'>About Me</Typography>
           <LayeredPaper content={aboutMeText} />
-          <Box display={'flex'} justifyContent={"space-around"}>
-          <Button variant='contained' endIcon={<DownloadRoundedIcon />} >
-            <Typography variant='body2'>Download Resume (.docx)</Typography>
+          <Box class="downloadResumeBtnBox">
+            <Button variant='contained' endIcon={<DownloadRoundedIcon />} >
+              <Typography variant='button'>Download Resume <span style={{textTransform: "lowercase"}}>(.docx)</span></Typography>
+            </Button>
             
-          </Button>
-          <Button variant='contained' endIcon={<DownloadRoundedIcon />} >
-            <Typography variant='body2'>Download Resume (.pdf)</Typography>
-          </Button>
+            <Button variant='contained' endIcon={<DownloadRoundedIcon />} >
+              <Typography variant='button'>Download Resume <span style={{textTransform: "lowercase"}}>(.pdf)</span></Typography>
+            </Button>
           </Box>
         </Box>
       </main>

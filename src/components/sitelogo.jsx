@@ -7,7 +7,7 @@ function SiteLogo() {
         <Box display={"flex"}>
           <LogoIcon />
           <Typography className="logoText" fontFamily={"Abel !important"}>
-            Andrew<br/>Ohakam
+            Andrew<br />Ohakam
           </Typography>
         </Box>
     );

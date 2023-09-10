@@ -25,10 +25,21 @@
 
 .MuiButton-contained{
   border-radius: 0.625rem;
+  text-transform: capitalize;
+  padding-top: 1.625rem ;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 1.625rem ;
 }
 
 .MuiTypography-root{
   font-family: "Maven Pro";
+}
+
+.MuiTypography-button{
+  font-weight: 900;
+  text-transform: capitalize;
+  font-size: 1.5rem;
 }
 
 .sectionHeader{
@@ -48,6 +59,15 @@
 
   .MuiButton-contained{
     background-color: var(--deep-red);
+  }
+
+  .MuiButton-contained:hover{
+    background-color: white;
+    color: var(--deep-red);
+  }
+
+  .deepColor{
+    color: var(--deep-red);
   }
   
   .sectionHeader{
@@ -161,6 +181,12 @@ body {
 .andrew-portrait{
   position: relative;
   margin: auto;
+}
+
+.downloadResumeBtnBox{
+  margin-top: 2.5rem;
+  display: flex; 
+  justify-content: space-around; 
 }
 
 @media (min-width: 600px){

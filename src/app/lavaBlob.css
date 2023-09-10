@@ -8,7 +8,6 @@
 .bm-pl__blob {
 	animation: moveR 8s linear infinite;
 	border-radius: 50%;
-/* 	mix-blend-mode: screen; */
 	position: absolute;
 	top: 0;
 	left: 0;

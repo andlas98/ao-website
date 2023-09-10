@@ -1,9 +1,10 @@
 import React from 'react';
 import {Box, Typography, Button} from '@mui/material';
+import Image from 'next/image';
 import Navbar from '@/components/navbar';
 import LayeredPaper from '@/components/layeredPaper';
 import LavaBlob from '@/components/lavaBlob';
-import AndrewPortrait from '@/img/AndrewPortrait';
+import AndrewPortrait from '../../public/AndrewPortrait';
 import DownloadRoundedIcon from '@mui/icons-material/DownloadRounded';
 import FileDownloadDoneRoundedIcon from '@mui/icons-material/FileDownloadDoneRounded';
 

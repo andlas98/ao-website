@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
-import LogoIcon from "@/img/LogoIcon";
+import LogoIcon from "../../public/LogoIcon";
 
 function SiteLogo() {
     return (

@@ -20,6 +20,11 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --deep-red: #ED2929;
+}
+
+.MuiButton-contained{
+  border-radius: 0.625rem;
 }
 
 .MuiTypography-root{
@@ -39,7 +44,10 @@
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
-    --deep-red: #ED2929;
+  }
+
+  .MuiButton-contained{
+    background-color: var(--deep-red);
   }
   
   .sectionHeader{
@@ -126,7 +134,7 @@ body {
 .bgPaper > .MuiTypography-root{color: transparent;}
 
 .fgPaper {
-  position: absolute;
+  position: relative;
 }
 
 .bgPaper{
@@ -148,6 +156,11 @@ body {
 
 .lavaLampBox, .splashLayeredPaperBox{
   width: 50%;
+}
+
+.andrew-portrait{
+  position: relative;
+  margin: auto;
 }
 
 @media (min-width: 600px){

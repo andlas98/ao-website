@@ -6,6 +6,7 @@ import LavaBlob from '@/components/lavaBlob';
 import AndrewPortrait from '../../public/AndrewPortrait';
 import DownloadRoundedIcon from '@mui/icons-material/DownloadRounded';
 import FileDownloadDoneRoundedIcon from '@mui/icons-material/FileDownloadDoneRounded';
+import ProjectBox from '@/components/projectBox';
 
 export default function Home() {
 
@@ -17,7 +18,7 @@ export default function Home() {
 
   const aboutMeText = (
   <Typography variant='body2'>
-    I design and develop web sites and web applications. My primary goal is to create products that respect modern standards and expertly display the client’s wishes, whether it be to expand their business online, showcase their skillset, or anything else! Check my resume to view my history in the field.
+    I design and develop web sites and web applications. My primary goal is to create products that respect modern standards and expertly display the client’s wishes, whether it be to expand their business online, showcase their skillset, or anything else! See my resume to view my history in the field.
   </Typography>
   );
 
@@ -41,15 +42,21 @@ export default function Home() {
         <Box className="aboutSectionBox">
           <Typography className='sectionHeader'>About Me</Typography>
           <LayeredPaper content={aboutMeText} />
-          <Box class="downloadResumeBtnBox">
-            <Button variant='contained' endIcon={<DownloadRoundedIcon />} >
-              <Typography variant='button'>Download Resume <span style={{textTransform: "lowercase"}}>(.docx)</span></Typography>
-            </Button>
+          <Box display={'flex'} justifyContent={'space-around'} mt={'3.25rem'}>
+            {/* TODO add functionality to download resumes */}
+            <a href='../../public/resumes/AndrewOhakamResume2023.docx' download>
+              <Button variant='contained' endIcon={<DownloadRoundedIcon />} >
+                <Typography variant='button'>Download Resume <span style={{textTransform: "lowercase"}}>(.docx)</span></Typography>
+              </Button>
+            </a>
             
             <Button variant='contained' endIcon={<DownloadRoundedIcon />} >
               <Typography variant='button'>Download Resume <span style={{textTransform: "lowercase"}}>(.pdf)</span></Typography>
             </Button>
           </Box>
+        </Box>
+        <Box className="projectsBox">
+          <ProjectBox />
         </Box>
       </main>
     </div>

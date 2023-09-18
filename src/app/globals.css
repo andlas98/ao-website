@@ -183,12 +183,6 @@ body {
   margin: auto;
 }
 
-.downloadResumeBtnBox{
-  margin-top: 2.5rem;
-  display: flex; 
-  justify-content: space-around; 
-}
-
 @media (min-width: 600px){
   .MuiToolbar-root.navbarToolbar{
     padding-left: 5rem;

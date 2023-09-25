@@ -21,6 +21,7 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
   --deep-red: #ED2929;
+  --maroon: #462222;
 }
 
 .MuiButton-contained{
@@ -181,6 +182,34 @@ body {
 .andrew-portrait{
   position: relative;
   margin: auto;
+}
+
+.projectsBox{
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.projectBox{
+  width: 45%;
+}
+
+.projectHero .projectDetails, .projectLinks{
+  width: 100%;
+}
+
+.projectHero{
+  background: white;
+  min-height: 20rem;
+  border-radius: 10px 10px 0 0;
+}
+
+.projectDetails, .projectLinks{
+  background: var(--maroon);
+}
+
+.projectLinks{
+  background: gray;
+  border-radius: 0 0 10px 10px;
 }
 
 @media (min-width: 600px){

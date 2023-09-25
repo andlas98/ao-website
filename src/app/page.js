@@ -55,8 +55,12 @@ export default function Home() {
             </Button>
           </Box>
         </Box>
-        <Box className="projectsBox">
-          <ProjectBox />
+        <Box class="projectsSectionBox">
+          <Typography className='sectionHeader'>Projects</Typography>
+          <Box className="projectsBox" display={'flex'}>
+            <ProjectBox projectTitle={"Lorem ipsom"} projectDescription={"compiled client and server successfully in 428 ms (2325 modules)"} />
+            <ProjectBox projectTitle={"Tragos Loret"} projectDescription={"event compiled client and server successfully in 630 ms (2325 modules)"} />
+          </Box>
         </Box>
       </main>
     </div>

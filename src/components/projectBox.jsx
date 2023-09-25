@@ -6,10 +6,10 @@ export default function ProjectBox(props){
         <Box className="projectBox" display={'flex'} flexDirection={'column'}>
             <Box className="projectHero"></Box>
             <Box className="projectDetails">
-                <Typography>
+                <Typography className="projectTitle">
                     {props.projectTitle}
                 </Typography>
-                <Typography>
+                <Typography className="projectDescription">
                     {props.projectDescription}
                 </Typography>
             </Box>

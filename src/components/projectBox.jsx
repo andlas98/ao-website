@@ -1,6 +1,7 @@
-import { Box, Paper, Typography } from "@mui/material";
+'use client';
+import { Box, Paper, Typography, Link} from "@mui/material";
 import { GitHub } from "@mui/icons-material";
-
+import LaunchIcon from '@mui/icons-material/Launch';
 export default function ProjectBox(props){
     return(
         <Box className="projectBox" display={'flex'} flexDirection={'column'}>
@@ -12,10 +13,14 @@ export default function ProjectBox(props){
                 <Typography className="projectDescription">
                     {props.projectDescription}
                 </Typography>
-            </Box>
-            <Box className="projectLinks">
-                {/* TODO add GitHub & site imgs */}
-                {/* <GitHub /> DNW*/}
+                <Box className="projectLinks">
+                    <Link target="_blank" rel="noopener" href={props.gitHubLink || "www.google.com"}>
+                        <GitHub />
+                    </Link>
+                    <Link href={props.projectLink}>
+                        <LaunchIcon />
+                    </Link>
+                </Box>
             </Box>
         </Box>
     )

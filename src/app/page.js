@@ -58,8 +58,9 @@ export default function Home() {
         <Box class="projectsSectionBox">
           <Typography className='sectionHeader'>Projects</Typography>
           <Box className="projectsBox" display={'flex'}>
-            <ProjectBox projectTitle={"Lorem ipsom"} projectDescription={"compiled client and server successfully in 428 ms (2325 modules)"} />
-            <ProjectBox projectTitle={"Tragos Loret"} projectDescription={"event compiled client and server successfully in 630 ms (2325 modules)"} />
+            {/* TODO replace mock data w data from backend */}
+            <ProjectBox projectTitle={"Gaming News Aggregator (2019)"} projectDescription={"Inspired by the desire to read gaming news from various sources on one site. Constructed with HTML, CSS, and JavaScript. Hosted with GitHub Pages."} />
+            <ProjectBox projectTitle={"Project X (XXXX)"} projectDescription={"Inspired by the desire to read gaming news from various sources on one site. Constructed with HTML, CSS, and JavaScript. Hosted with GitHub Pages."} />
           </Box>
         </Box>
       </main>

@@ -187,6 +187,7 @@ body {
 .projectsBox{
   flex-flow: row wrap;
   justify-content: space-around;
+  align-items: stretch;
 }
 
 .projectBox{
@@ -207,14 +208,35 @@ body {
   background: var(--maroon);
 }
 
-.projectLinks{
-  background: gray;
+.projectDetails {
+  padding: 1rem 1.5rem;
   border-radius: 0 0 10px 10px;
 }
 
+.projectTitle{
+  font-weight: 900;
+  margin-bottom: 0.5rem;
+}
+
+.projectLinks{
+  margin-top: 1rem;
+}
+
+.projectLinks .MuiLink-root {
+  color: inherit;
+}
+
+.projectLinks .MuiSvgIcon-root{
+  width: 40px;
+  height: 40px;
+}
 @media (min-width: 600px){
   .MuiToolbar-root.navbarToolbar{
     padding-left: 5rem;
     padding-right: 5rem;
   }
+}
+
+@media (max-width: 599px){
+  
 }

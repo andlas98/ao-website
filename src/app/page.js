@@ -7,6 +7,7 @@ import AndrewPortrait from '../../public/AndrewPortrait';
 import DownloadRoundedIcon from '@mui/icons-material/DownloadRounded';
 import FileDownloadDoneRoundedIcon from '@mui/icons-material/FileDownloadDoneRounded';
 import ProjectBox from '@/components/projectBox';
+import ContactForm from '@/components/contactForm';
 
 export default function Home() {
 
@@ -36,7 +37,7 @@ export default function Home() {
           </Box>
           <Box className="lavaLampBox" >
             <LavaBlob />
-            <AndrewPortrait class="andrew-portrait"/>
+            <AndrewPortrait className="andrew-portrait"/>
           </Box>
         </Box>
         <Box className="aboutSectionBox">
@@ -55,13 +56,18 @@ export default function Home() {
             </Button>
           </Box>
         </Box>
-        <Box class="projectsSectionBox">
+        <Box className="projectsSectionBox">
           <Typography className='sectionHeader'>Projects</Typography>
           <Box className="projectsBox" display={'flex'}>
             {/* TODO replace mock data w data from backend */}
             <ProjectBox projectTitle={"Gaming News Aggregator (2019)"} projectDescription={"Inspired by the desire to read gaming news from various sources on one site. Constructed with HTML, CSS, and JavaScript. Hosted with GitHub Pages."} />
             <ProjectBox projectTitle={"Project X (XXXX)"} projectDescription={"Inspired by the desire to read gaming news from various sources on one site. Constructed with HTML, CSS, and JavaScript. Hosted with GitHub Pages."} />
           </Box>
+        </Box>
+        <Typography className='sectionHeader'>Contact</Typography>
+        <Box className="contactSectionBox">
+          <LayeredPaper content={contactText} />
+          <ContactForm />
         </Box>
       </main>
     </div>

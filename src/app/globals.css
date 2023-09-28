@@ -83,6 +83,11 @@
     background-color: #141414;
     color: white;
   }
+
+  .contactFormBox  .MuiFilledInput-root{
+    background-color: white;
+  }
+    
 }
 
 .MuiTypography-body1{
@@ -164,7 +169,7 @@ body {
   margin-left: 1.5rem;
 }
 
-.splashSectionBox .aboutSectionBox{
+.splashSectionBox, .aboutSectionBox{
   position: relative;
 }
 
@@ -187,7 +192,6 @@ body {
 .projectsBox{
   flex-flow: row wrap;
   justify-content: space-around;
-  align-items: stretch;
 }
 
 .projectBox{
@@ -219,17 +223,51 @@ body {
 }
 
 .projectLinks{
+  display: flex;
+  flex-flow: row wrap;
   margin-top: 1rem;
 }
 
 .projectLinks .MuiLink-root {
   color: inherit;
+  margin-right: 1rem;
 }
 
 .projectLinks .MuiSvgIcon-root{
   width: 40px;
   height: 40px;
 }
+
+.contactSectionBox{
+  display: flex;
+  justify-content: space-between;
+}
+
+.contactSectionBox .layeredPaperDiv{
+  width: 48%;
+  margin-top: 2.5rem;
+}
+
+.contactSectionBox .layeredPaperDiv .bgPaper, .contactSectionBox .layeredPaperDiv .fgPaper {
+  padding: 8.375rem 3rem;
+}
+
+.contactSectionBox .contactFormBox{
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contactSectionBox .contactFormBox .MuiButton-contained{
+  width: 70%;
+  margin: auto;
+}
+
+.contactFormBox .MuiFilledInput-root{
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+}
+
 @media (min-width: 600px){
   .MuiToolbar-root.navbarToolbar{
     padding-left: 5rem;
@@ -238,5 +276,5 @@ body {
 }
 
 @media (max-width: 599px){
-  
+
 }

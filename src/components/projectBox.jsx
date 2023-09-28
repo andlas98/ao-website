@@ -10,15 +10,15 @@ export default function ProjectBox(props){
                 <Typography className="projectTitle">
                     {props.projectTitle}
                 </Typography>
-                <Typography className="projectDescription">
+                <Typography variant='body2' className="projectDescription">
                     {props.projectDescription}
                 </Typography>
                 <Box className="projectLinks">
-                    <Link target="_blank" rel="noopener" href={props.gitHubLink || "www.google.com"}>
-                        <GitHub />
-                    </Link>
                     <Link href={props.projectLink}>
                         <LaunchIcon />
+                    </Link>
+                    <Link target="_blank" rel="noopener" href={props.gitHubLink || "www.google.com"}>
+                        <GitHub />
                     </Link>
                 </Box>
             </Box>

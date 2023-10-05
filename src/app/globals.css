@@ -22,15 +22,16 @@
   --background-end-rgb: 255, 255, 255;
   --deep-red: #ED2929;
   --maroon: #462222;
+  --xl-breakpoint: 1536px;
+  --lg-breakpoint: 1200px;
+  --md-breakpoint: 900px;
+  --sm-breakpoint: 600px;
 }
 
 .MuiButton-contained{
   border-radius: 0.625rem;
   text-transform: capitalize;
-  padding-top: 1.625rem ;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-bottom: 1.625rem ;
+  padding: 1rem 2rem;
 }
 
 .MuiTypography-root{
@@ -40,11 +41,11 @@
 .MuiTypography-button{
   font-weight: 900;
   text-transform: capitalize;
-  font-size: 1.5rem;
+  font-size: 1.35rem;
 }
 
 .sectionHeader{
-  font-size: 3.25rem;
+  font-size: 2.925rem;
   font-weight: 700;
   text-align: center;
   margin-top: 2.688rem;
@@ -91,12 +92,12 @@
 }
 
 .MuiTypography-body1{
-  font-size: 2rem;
-  line-height: 2.375rem;
+  font-size: 1.8rem;
+  line-height: 2.1375rem;
 }
 
 .MuiTypography-body2{
-  font-size: 1.5rem;
+  font-size: 1.35rem;
 }
 
 body {
@@ -116,7 +117,7 @@ body {
 
 .navbarButton{
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 1.35rem;
   text-transform: capitalize;
   margin-left: 2rem;
   margin-right: 2rem;
@@ -133,10 +134,10 @@ body {
 
 
 .logoText{
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin-top: auto;
   margin-bottom: auto;
-  line-height: 1.875rem;
+  line-height: 1.6875rem;
   padding-left: 0.75rem;
 }
 
@@ -152,7 +153,7 @@ body {
 .bgPaper, .fgPaper {
   width: 100%;
   border-radius: 10px;
-  font-size: 2rem;
+  font-size: 1.8rem;
   padding: 3rem 2.813rem 3rem 2.813rem;
   box-shadow: none;
 }
@@ -177,7 +178,10 @@ body {
   display: flex;
   align-content: space-between;
   justify-content: space-between;
-  margin-bottom: 6.438rem;
+}
+
+.aboutSectionBox{
+  margin-top: 7.438rem;
 }
 
 .lavaLampBox, .splashLayeredPaperBox{
@@ -192,6 +196,12 @@ body {
 .projectsBox{
   flex-flow: row wrap;
   justify-content: space-around;
+}
+
+.downloadBtnsBox{
+  width: 75%;
+  margin: auto;
+  margin-top: 3rem;
 }
 
 .projectBox{
@@ -275,6 +285,60 @@ body {
   }
 }
 
-@media (max-width: 599px){
+.splashSectionBox::before{
+  content: "XL";
+}
 
+@media (max-width: 1200px) {
+  .splashSectionBox::before{
+    content: "LG";
+  }
+}
+
+@media (max-width: 900px) {
+  .MuiTypography-button, .MuiTypography-body2, .navbarButton{
+    font-size: 1.2rem;
+  }
+  .MuiTypography-body1{
+    font-size: 1.6rem;
+  }
+  .sectionHeader{
+    font-size: 2.6rem;
+  }
+  .splashSectionBox::before{
+    content: "MD";
+  }
+  .splashSectionBox{
+    flex-direction: column-reverse;
+  }
+  .lavaLampBox, .splashLayeredPaperBox {
+    width: 100%;
+  }
+  .lavaLampBox {
+    max-height: 600px;
+    min-height: 300px;
+  }
+  .downloadBtnsBox{
+    flex-direction: column;
+  }
+  .downloadBtnsBox .MuiButton-root{
+    margin-bottom: 1rem;
+    width: 80%;
+    margin: auto;
+  }
+  .contactSectionBox {
+    flex-direction: column;
+  }
+  .contactSectionBox .layeredPaperDiv{
+    margin-bottom: 2.5rem ;
+  }
+  .contactSectionBox .layeredPaperDiv, .contactSectionBox .contactFormBox{
+    width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  .splashSectionBox::before{
+    content: "SM";
+  }
 }

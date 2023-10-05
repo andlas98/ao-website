@@ -2,6 +2,7 @@
 import { Box, Paper, Typography, Link} from "@mui/material";
 import { GitHub } from "@mui/icons-material";
 import LaunchIcon from '@mui/icons-material/Launch';
+
 export default function ProjectBox(props){
     return(
         <Box className="projectBox" display={'flex'} flexDirection={'column'}>

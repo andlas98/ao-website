@@ -13,7 +13,7 @@ export default function Home() {
 
   const splashIntro = (
     <Typography variant='body1'>
-      Hi! My name is <span className='deepColor'>Andrew Ohakam</span>. I am a frontend developer creating <span className='deepColor'>web experiences</span>.
+      Hi! My name is <span className='deepColor'>Andrew Ohakam</span>. <br />I am a frontend developer creating <span className='deepColor'>web experiences</span>.
     </Typography>
   );
 
@@ -43,7 +43,7 @@ export default function Home() {
         <Box className="aboutSectionBox">
           <Typography className='sectionHeader'>About Me</Typography>
           <LayeredPaper content={aboutMeText} />
-          <Box display={'flex'} justifyContent={'space-around'} mt={'3.25rem'}>
+          <Box className="downloadBtnsBox" display={'flex'} justifyContent={'space-around'} mt={'3.25rem'}>
             {/* TODO add functionality to download resumes */}
             <a href='../../public/resumes/AndrewOhakamResume2023.docx' download>
               <Button variant='contained' endIcon={<DownloadRoundedIcon />} >

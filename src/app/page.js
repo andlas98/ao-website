@@ -62,12 +62,15 @@ export default function Home() {
             {/* TODO replace mock data w data from backend */}
             <ProjectBox projectTitle={"Gaming News Aggregator (2019)"} projectDescription={"Inspired by the desire to read gaming news from various sources on one site. Constructed with HTML, CSS, and JavaScript. Hosted with GitHub Pages."} />
             <ProjectBox projectTitle={"Project X (XXXX)"} projectDescription={"Inspired by the desire to read gaming news from various sources on one site. Constructed with HTML, CSS, and JavaScript. Hosted with GitHub Pages."} />
+            <ProjectBox projectTitle={"Project X (XXXX)"} projectDescription={"Inspired by the desire to read gaming news from various sources on one site. Constructed with HTML, CSS, and JavaScript. Hosted with GitHub Pages."} />
           </Box>
         </Box>
-        <Typography className='sectionHeader'>Contact</Typography>
         <Box className="contactSectionBox">
-          <LayeredPaper content={contactText} />
-          <ContactForm />
+          <Typography className='sectionHeader'>Contact</Typography>
+          <Box className="contactSectionContent">
+            <LayeredPaper content={contactText} />
+            <ContactForm />
+          </Box>
         </Box>
       </main>
     </div>

@@ -180,23 +180,24 @@ body {
   justify-content: space-between;
 }
 
-.aboutSectionBox{
-  margin-top: 7.438rem;
+.aboutSectionBox, .projectsSectionBox, .contactSectionBox {
+  margin-top: 10.75rem;
 }
 
-.lavaLampBox, .splashLayeredPaperBox{
-  width: 50%;
+.splashLayeredPaperBox {
+  width: 60%;
 }
+
+.lavaLampBox {
+  width: 40%;
+}
+
 
 .andrew-portrait{
   position: relative;
   margin: auto;
 }
 
-.projectsBox{
-  flex-flow: row wrap;
-  justify-content: space-around;
-}
 
 .downloadBtnsBox{
   width: 75%;
@@ -204,8 +205,13 @@ body {
   margin-top: 3rem;
 }
 
+.projectsBox{
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
 .projectBox{
-  width: 45%;
+  width: 30%;
 }
 
 .projectHero .projectDetails, .projectLinks{
@@ -228,8 +234,14 @@ body {
 }
 
 .projectTitle{
+  font-size: 1.525rem;
+  height: 4.125rem;
   font-weight: 900;
-  margin-bottom: 0.5rem;
+}
+
+.projectDescription {
+  margin-top: 0.75rem;
+  line-height: 30px;
 }
 
 .projectLinks{
@@ -240,15 +252,15 @@ body {
 
 .projectLinks .MuiLink-root {
   color: inherit;
-  margin-right: 1rem;
+  margin-right: 0.5rem;
 }
 
 .projectLinks .MuiSvgIcon-root{
-  width: 40px;
-  height: 40px;
+  width: 1.875rem;
+  height: 1.875rem;
 }
 
-.contactSectionBox{
+.contactSectionContent{
   display: flex;
   justify-content: space-between;
 }

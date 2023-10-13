@@ -115,6 +115,13 @@ body {
   position: relative;
 }
 
+.navbarToolbar .andrewPortrait{
+  position: relative;
+  margin: auto;
+  width: 3.25rem;
+  height: 3.25rem;
+}
+
 .navbarButton{
   font-weight: 700;
   font-size: 1.35rem;
@@ -144,6 +151,7 @@ body {
 .logoCircle{
   margin-top: 1rem;
   margin-bottom: 1rem;
+  background: var(--deep-red);
 }
 
 .layeredPaperDiv{
@@ -152,7 +160,7 @@ body {
 
 .bgPaper, .fgPaper {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   font-size: 1.8rem;
   padding: 3rem 2.813rem 3rem 2.813rem;
   box-shadow: none;
@@ -190,14 +198,21 @@ body {
 
 .lavaLampBox {
   width: 40%;
+  height: 100%;
 }
-
-
-.andrew-portrait{
+/* 
+.lavaBlobPortaitBG{
+  background-color: var(--deep-red);
+  border-radius: 50%;
+  padding: 3rem;
+} */
+.lavaLampBox .andrewPortrait{
   position: relative;
-  margin: auto;
+  /* margin: auto; */
+  margin-top: 15%;
+  margin-left: 35%;
+  max-width: 12.5rem;
 }
-
 
 .downloadBtnsBox{
   width: 75%;
@@ -221,7 +236,7 @@ body {
 .projectHero{
   background: white;
   min-height: 20rem;
-  border-radius: 10px 10px 0 0;
+  border-radius: 0.625rem 0.625rem 0 0;
 }
 
 .projectDetails, .projectLinks{
@@ -230,7 +245,7 @@ body {
 
 .projectDetails {
   padding: 1rem 1.5rem;
-  border-radius: 0 0 10px 10px;
+  border-radius: 0 0 0.625rem 0.625rem;
 }
 
 .projectTitle{
@@ -287,7 +302,7 @@ body {
 
 .contactFormBox .MuiFilledInput-root{
   margin-bottom: 1.5rem;
-  border-radius: 10px;
+  border-radius: 0.625rem;
 }
 
 @media (min-width: 600px){
@@ -298,12 +313,16 @@ body {
 }
 
 .splashSectionBox::before{
+  position: absolute;
+  z-index: 3;
   content: "XL";
 }
 
 @media (max-width: 1200px) {
   .splashSectionBox::before{
     content: "LG";
+    position: absolute;
+    z-index: 3;
   }
 }
 
@@ -318,6 +337,8 @@ body {
     font-size: 2.6rem;
   }
   .splashSectionBox::before{
+    position: absolute;
+    z-index: 3;
     content: "MD";
   }
   .splashSectionBox{
@@ -352,5 +373,7 @@ body {
 @media (max-width: 600px) {
   .splashSectionBox::before{
     content: "SM";
+    position: absolute;
+    z-index: 3;
   }
 }

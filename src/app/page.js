@@ -5,7 +5,7 @@ import LayeredPaper from '@/components/layeredPaper';
 import LavaBlob from '@/components/lavaBlob';
 import AndrewPortrait from '../../public/AndrewPortrait';
 import DownloadRoundedIcon from '@mui/icons-material/DownloadRounded';
-import FileDownloadDoneRoundedIcon from '@mui/icons-material/FileDownloadDoneRounded';
+import SiteLogo from '@/components/sitelogo';
 import ProjectBox from '@/components/projectBox';
 import ContactForm from '@/components/contactForm';
 
@@ -37,7 +37,11 @@ export default function Home() {
           </Box>
           <Box className="lavaLampBox" >
             <LavaBlob />
-            <AndrewPortrait className="andrew-portrait"/>
+            {/* <Box className="lavaBlobPortaitBG"> */}
+              <AndrewPortrait />
+            {/* </Box> */}
+            {/* <SiteLogo />             */}
+
           </Box>
         </Box>
         <Box className="aboutSectionBox">

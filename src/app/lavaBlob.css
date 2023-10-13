@@ -1,6 +1,6 @@
 .bm-pl {
 	position: relative;
-	width: 50%;
+	width: 60%;
 	height: 100%;
 	margin: auto;
 	margin-top: -4rem;
@@ -11,11 +11,11 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 18em;
+	width: 19em;
 	height: 19em;
 }
 .bm-pl__blob--r, .bm-pl__blob--g, .bm-pl__blob--b {
-	background: rgb(220, 2, 2);
+	background: #ED2929;
 }
 .bm-pl__blob--g {
 	animation-name: moveG;

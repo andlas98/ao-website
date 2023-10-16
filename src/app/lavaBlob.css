@@ -71,3 +71,14 @@
 		transform: translate(3.5em,2em) rotate(0) scale(0.875,0.875);
 	}
 }
+
+@media (max-width: 1200px) {
+	.bm-pl__blob {
+		width: 17em;
+		height: 17em;
+	}
+}
+
+@media (max-width: 900px) {
+
+}

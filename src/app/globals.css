@@ -200,12 +200,7 @@ body {
   width: 40%;
   height: 100%;
 }
-/* 
-.lavaBlobPortaitBG{
-  background-color: var(--deep-red);
-  border-radius: 50%;
-  padding: 3rem;
-} */
+
 .lavaLampBox .andrewPortrait{
   position: relative;
   /* margin: auto; */
@@ -341,6 +336,18 @@ body {
     z-index: 3;
     content: "MD";
   }
+  .navbarToolbar{
+    display: flex;
+    justify-content: space-between;
+  }
+  .navbarButton{
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .projectBox{
+    width: 47%;
+    margin-bottom: 1rem;
+  }
   .splashSectionBox{
     flex-direction: column-reverse;
   }
@@ -351,13 +358,19 @@ body {
     max-height: 600px;
     min-height: 300px;
   }
+  .lavaLampBox .andrewPortrait{
+    margin: auto;
+    margin-top: 3rem;
+  }
   .downloadBtnsBox{
     flex-direction: column;
   }
   .downloadBtnsBox .MuiButton-root{
     margin-bottom: 1rem;
-    width: 80%;
+    width: 100%;
+    padding: 0.5rem 1rem;
     margin: auto;
+    margin-bottom: 1rem;
   }
   .contactSectionBox {
     flex-direction: column;

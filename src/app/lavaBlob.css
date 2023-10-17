@@ -80,5 +80,14 @@
 }
 
 @media (max-width: 900px) {
+	.bm-pl{
+		width: 300px;
+	}
+}
 
+@media (max-width: 600px) {
+	.bm-pl__blob{
+		width: 15em;
+    	height: 15em;
+	}
 }

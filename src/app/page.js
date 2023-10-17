@@ -5,7 +5,6 @@ import LayeredPaper from '@/components/layeredPaper';
 import LavaBlob from '@/components/lavaBlob';
 import AndrewPortrait from '../../public/AndrewPortrait';
 import DownloadRoundedIcon from '@mui/icons-material/DownloadRounded';
-import SiteLogo from '@/components/sitelogo';
 import ProjectBox from '@/components/projectBox';
 import ContactForm from '@/components/contactForm';
 
@@ -30,7 +29,7 @@ export default function Home() {
   return (
     <div>
       <Navbar />
-      <main className="flex min-h-screen flex-col justify-between p-24">
+      <main className="site-content flex min-h-screen flex-col justify-between">
         <Box className="splashSectionBox">
           <Box className="splashLayeredPaperBox">
             <LayeredPaper content={splashIntro}></LayeredPaper>

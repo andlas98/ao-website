@@ -28,6 +28,10 @@
   --sm-breakpoint: 600px;
 }
 
+.site-content{
+  padding: 6rem;
+}
+
 .MuiButton-contained{
   border-radius: 0.625rem;
   text-transform: capitalize;
@@ -162,7 +166,7 @@ body {
   width: 100%;
   border-radius: 0.625rem;
   font-size: 1.8rem;
-  padding: 3rem 2.813rem 3rem 2.813rem;
+  padding: 3rem 2.813rem;
   box-shadow: none;
 }
 
@@ -217,7 +221,7 @@ body {
 
 .projectsBox{
   flex-flow: row wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .projectBox{
@@ -230,7 +234,7 @@ body {
 
 .projectHero{
   background: white;
-  min-height: 20rem;
+  height: 15rem;
   border-radius: 0.625rem 0.625rem 0 0;
 }
 
@@ -348,6 +352,12 @@ body {
     width: 47%;
     margin-bottom: 1rem;
   }
+  .projectHero{
+    height: 15rem;
+  } 
+  .projectTitle{
+    height: 6.125rem;
+  }
   .splashSectionBox{
     flex-direction: column-reverse;
   }
@@ -372,21 +382,61 @@ body {
     margin: auto;
     margin-bottom: 1rem;
   }
-  .contactSectionBox {
+  .contactSectionBox .layeredPaperDiv{
+    margin-top: 0;
+  }
+  .contactSectionBox .layeredPaperDiv .bgPaper, .contactSectionBox .layeredPaperDiv .fgPaper {
+    padding: 3rem 2.813rem;
+  }
+  .contactSectionContent {
     flex-direction: column;
   }
   .contactSectionBox .layeredPaperDiv{
     margin-bottom: 2.5rem ;
   }
-  .contactSectionBox .layeredPaperDiv, .contactSectionBox .contactFormBox{
-    width: 90%;
+  .contactSectionBox .layeredPaperDiv{
+    width: 95%;
+  }
+  .contactSectionBox .contactFormBox{
+    width: 100%;
   }
 }
 
 @media (max-width: 600px) {
+  .site-content{
+    padding: 6rem 3rem;
+  }
   .splashSectionBox::before{
     content: "SM";
     position: absolute;
     z-index: 3;
+  }
+  .bgPaper{
+    margin-top: 1rem;
+    margin-left: 1rem;
+  }
+  .bgPaper, .fgPaper {
+    padding: 2rem 1.813rem;
+  }
+  .lavaLampBox .andrewPortrait{
+    margin-top: 2rem;
+  }
+  .downloadBtnsBox {
+    width: 85%;
+  }
+  .projectTitle{
+    height: 4.125rem;
+  }
+  .projectBox{
+    width: 100%;
+  }
+  .projectTitle{
+    height: fit-content;
+  }
+  .contactSectionBox .layeredPaperDiv .bgPaper, .contactSectionBox .layeredPaperDiv .fgPaper{
+    padding: 2rem 1.813rem;
+  }
+  .contactSectionBox .contactFormBox .MuiButton-contained{
+    width: 100%;
   }
 }

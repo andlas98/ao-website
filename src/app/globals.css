@@ -314,12 +314,12 @@ body {
 .splashSectionBox::before{
   position: absolute;
   z-index: 3;
-  content: "XL";
+  /* content: "XL"; */
 }
 
 @media (max-width: 1200px) {
   .splashSectionBox::before{
-    content: "LG";
+    /* content: "LG"; */
     position: absolute;
     z-index: 3;
   }
@@ -338,7 +338,7 @@ body {
   .splashSectionBox::before{
     position: absolute;
     z-index: 3;
-    content: "MD";
+    /* content: "MD"; */
   }
   .navbarToolbar{
     display: flex;
@@ -407,7 +407,7 @@ body {
     padding: 6rem 3rem;
   }
   .splashSectionBox::before{
-    content: "SM";
+    /* content: "SM"; */
     position: absolute;
     z-index: 3;
   }

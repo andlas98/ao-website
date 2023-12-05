@@ -1,0 +1,25 @@
+import clientPromise from '../../mongodb';
+import ProjectBox from './projectBox';
+
+    export default async function WebDevelopmentProjects() {
+        try {
+            const client = await clientPromise;
+            const db = client.db("database1");
+     
+            const projects = await db
+                .collection("collection1")
+                .find({})
+                .toArray();
+            var cards = projects.map((project)=> {
+             return <ProjectBox
+              projectTitle={project.projectname}
+              projectDescription={project.description}
+              projectLink={project.link}
+              gitHubLink={project.link_github}/>
+              
+            })
+            return cards;
+        } catch (e) {
+            console.error(e);
+        }
+     };

@@ -5,7 +5,7 @@ export default function ContactForm(props){
         <Box className="contactFormBox">
             <TextField className="contactFormNameField" label="Name" variant="filled" />
             <TextField className="contactFormEmailField" label="Email" variant="filled" />
-            <TextField className="contactFormMessageField" label="Message" variant="filled" multiline="true" minRows={9}/>
+            <TextField className="contactFormMessageField" label="Message" variant="filled" multiline={true} minRows={9}/>
             <Button variant='contained' >
               <Typography variant='button'>Send Message</Typography>
             </Button>

@@ -1,5 +1,5 @@
 import clientPromise from '../../mongodb';
-import ProjectBox from './projectBox';
+import WebDevProjectCard from './WebDevProjectCard';
 
     export default async function WebDevelopmentProjects() {
         try {
@@ -11,11 +11,13 @@ import ProjectBox from './projectBox';
                 .find({})
                 .toArray();
             var cards = projects.map((project)=> {
-             return <ProjectBox
-              projectTitle={project.projectname}
-              projectDescription={project.description}
-              projectLink={project.link}
-              gitHubLink={project.link_github}/>
+                return <WebDevProjectCard
+                    projectTitle={project.projectname}
+                    poster={project.poster}
+                    projectDescription={project.description}
+                    projectLink={project.link}
+                    gitHubLink={project.link_github}
+              />
               
             })
             return cards;

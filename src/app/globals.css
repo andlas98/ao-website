@@ -224,52 +224,54 @@ body {
   justify-content: space-between;
 }
 
-.projectBox{
+.webDevProjectCard{
   width: 30%;
 }
 
-.projectHero .projectDetails, .projectLinks{
+.webDevProjectHero .webDevProjectDetails, .webDevProjectLinks{
   width: 100%;
 }
 
-.projectHero{
+.webDevProjectHero{
   background: white;
   height: 15rem;
   border-radius: 0.625rem 0.625rem 0 0;
 }
 
-.projectDetails, .projectLinks{
+.webDevProjectDetails, .webDevProjectLinks{
   background: var(--maroon);
 }
 
-.projectDetails {
+.webDevProjectDetails {
   padding: 1rem 1.5rem;
   border-radius: 0 0 0.625rem 0.625rem;
+  border-top: 2px solid black;
 }
 
-.projectTitle{
+.webDevProjectTitle{
   font-size: 1.525rem;
   height: 4.125rem;
   font-weight: 900;
 }
 
-.projectDescription {
+.webDevProjectDescription {
   margin-top: 0.75rem;
   line-height: 30px;
+  min-height: 11.25rem;
 }
 
-.projectLinks{
+.webDevProjectLinks{
   display: flex;
   flex-flow: row wrap;
   margin-top: 1rem;
 }
 
-.projectLinks .MuiLink-root {
+.webDevProjectLinks .MuiLink-root {
   color: inherit;
   margin-right: 0.5rem;
 }
 
-.projectLinks .MuiSvgIcon-root{
+.webDevProjectLinks .MuiSvgIcon-root{
   width: 1.875rem;
   height: 1.875rem;
 }
@@ -348,14 +350,14 @@ body {
     margin-left: 1rem;
     margin-right: 1rem;
   }
-  .projectBox{
-    width: 47%;
+  .webDevProjectCard{
+    width: 100%;
     margin-bottom: 1rem;
   }
-  .projectHero{
+  .webDevProjectHero{
     height: 15rem;
   } 
-  .projectTitle{
+  .webDevProjectTitle{
     height: 6.125rem;
   }
   .splashSectionBox{
@@ -424,13 +426,13 @@ body {
   .downloadBtnsBox {
     width: 85%;
   }
-  .projectTitle{
+  .webDevProjectTitle{
     height: 4.125rem;
   }
-  .projectBox{
+  .webDevProjectCard{
     width: 100%;
   }
-  .projectTitle{
+  .webDevProjectTitle{
     height: fit-content;
   }
   .contactSectionBox .layeredPaperDiv .bgPaper, .contactSectionBox .layeredPaperDiv .fgPaper{

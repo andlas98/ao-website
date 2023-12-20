@@ -11,7 +11,7 @@ export default function WebDevProjectCard (props) {
             </Box>
             <Box className="webDevProjectDetails">
                 <Typography className="webDevProjectTitle">
-                    {props.projectTitle}
+                    {props.projectTitle} ({props.yearOfInitialRelease})
                 </Typography>
                 <Typography variant='body2' className="webDevProjectDescription">
                     {props.projectDescription}

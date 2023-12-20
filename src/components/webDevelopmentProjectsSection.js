@@ -12,8 +12,9 @@ import WebDevProjectCard from './WebDevProjectCard';
                 .toArray();
             var cards = projects.map((project)=> {
                 return <WebDevProjectCard
-                    projectTitle={project.projectname}
                     poster={project.poster}
+                    projectTitle={project.projectname}
+                    yearOfInitialRelease={project.yearOfInitialRelease}
                     projectDescription={project.description}
                     projectLink={project.link}
                     gitHubLink={project.link_github}

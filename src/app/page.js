@@ -7,6 +7,7 @@ import AndrewPortrait from "../../public/AndrewPortrait";
 import DownloadRoundedIcon from "@mui/icons-material/DownloadRounded";
 import ContactForm from "@/components/contactForm";
 import WebDevelopmentProjects from "@/components/webDevelopmentProjectsSection";
+import VoiceWorkSection from "../components/voiceworkSection";
 
 export default function Home() { 
   const splashIntro = (
@@ -78,9 +79,12 @@ export default function Home() {
 
           <Typography className="sectionHeader">Portfolio</Typography>
           <Box className="projectsBox" display={"flex"}>
-          <WebDevelopmentProjects />
+            <WebDevelopmentProjects />
           </Box>
         </Box>
+
+        <VoiceWorkSection />
+
         <Box className="contactSectionBox">
           <Typography className="sectionHeader">Contact</Typography>
           <Box className="contactSectionContent">

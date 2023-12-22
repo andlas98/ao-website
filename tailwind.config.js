@@ -9,6 +9,8 @@ module.exports = {
     colors:{
       deepRed: "#ED2929",
       maroon: "#462222",
+      white: '#ffffff',
+      black: "#000",
     },
     borderRadius:{
       "reg": "0.625rem",

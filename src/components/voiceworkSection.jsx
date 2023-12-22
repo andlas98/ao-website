@@ -4,7 +4,8 @@ import VoiceWorkCard from "./VoiceWorkCard";
 
 export default function VoiceWorkSection(){
     return(
-        <Box>
+        <Box className="grid">
+            <VoiceWorkCard />
             <VoiceWorkCard />
         </Box>
     );

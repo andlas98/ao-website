@@ -17,6 +17,7 @@ export default function Home() {
       <span className="deepColor">web experiences</span>.
     </Typography>
   );
+  
   const aboutMeText = (
     <Typography variant="body2">
       I design and develop web sites and web applications. My primary goal is to

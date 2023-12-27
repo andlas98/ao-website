@@ -10,7 +10,7 @@ export default function VoiceWorkCard(props){
     const [trackPlaying, setTrackPlaying] = useState(false);
 
     useEffect(() => {
-        setMusicTrack(new Audio("https://drive.google.com/uc?export=view&id=1L30zwM1UHpbq1wEkA3jc2On4zTyBM6al"));
+        setMusicTrack(new Audio(props.link));
     }, [])
 
     function handleTrackPlay(){
@@ -25,30 +25,16 @@ export default function VoiceWorkCard(props){
         }
     }
     
-    return(
-        <Box sx={{"width": "45%"}} className="bg-maroon border-solid border-2 border-black flex rounded-reg pl-6 pr-6 pt-8 pb-8" id="voiceWorkCard">
-            <Box className="w-4/5 flex flex-col">
-                <Typography variant="body2">Role: {props.role}</Typography>
-                <Typography variant="body2">Source: {props.source}</Typography>
+    return (
+        <Box className="bg-maroon border-solid border-2 border-black flex rounded-reg pl-[1rem] pr-[1rem] pt-[2rem] pb-[2rem]" id="voiceWorkCard">
+            <Box className="w-4/5 flex flex-col h-full">
+                <Typography variant="body2" className="m-auto inline-block align-middle"><span className="font-bold">{props.name}</span> ({props.type})</Typography>
             </Box>
             <Box className="w-1/5 flex">
                 <IconButton sx={{marginLeft: "auto", height: "3.875rem", width: "3.875rem",}} className="bg-white rounded-1/2 m-auto hover:bg-white" onClick={()=>{handleTrackPlay()}}>
                     {trackPlaying ?  <Stop className={cardButtonStyles}/> : <PlayArrow className={cardButtonStyles}/>}
-                    
-                    {/* {musicTrack} */}
                 </IconButton>
             </Box>
-            {/* <audio controls>
-                <source src="https://drive.google.com/uc?export=view&id=1L30zwM1UHpbq1wEkA3jc2On4zTyBM6al"></source>
-            </audio> */}
         </Box>
     );
 }
-
-// export function MusicFile(props){
-//     return(
-//         <audio>
-//             <source src="https://drive.google.com/uc?export=view&id=1L30zwM1UHpbq1wEkA3jc2On4zTyBM6al"></source>
-//         </audio>
-//     );
-// }

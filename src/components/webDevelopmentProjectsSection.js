@@ -5,7 +5,7 @@ import WebDevProjectCard from './WebDevProjectCard';
         try {
             const client = await clientPromise;
             const db = client.db("database1");
-     
+            
             const projects = await db
                 .collection("collection1")
                 .find({})
@@ -25,4 +25,4 @@ import WebDevProjectCard from './WebDevProjectCard';
         } catch (e) {
             console.error(e);
         }
-     };
+    };

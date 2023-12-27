@@ -7,7 +7,7 @@ import AndrewPortrait from "../../public/AndrewPortrait";
 import DownloadRoundedIcon from "@mui/icons-material/DownloadRounded";
 import ContactForm from "@/components/contactForm";
 import WebDevelopmentProjects from "@/components/webDevelopmentProjectsSection";
-import VoiceWorkSection from "../components/voiceworkSection";
+import VoiceworkSection from "../components/voiceworkSection";
 
 export default function Home() { 
   const splashIntro = (
@@ -20,11 +20,12 @@ export default function Home() {
   
   const aboutMeText = (
     <Typography variant="body2">
-      I design and develop web sites and web applications. My primary goal is to
+      I design and develop web sites and web applications. My goal everytime I talk with a potential client is to
       create products that respect modern standards and expertly display the
       client's wishes, whether it be to expand their business online, showcase
-      their skillset, or anything else! See my resume to view my history in the
-      field.
+      their skillset, or anything else! 
+      
+      I also work on other disciplines on the side. See the Portfolio section below to see all of what I do!
     </Typography>
   );
 
@@ -77,14 +78,15 @@ export default function Home() {
           </Box>
         </Box>
         <Box className="portfolioSectionBox">
-
           <Typography className="sectionHeader">Portfolio</Typography>
           <Box className="projectsBox" display={"flex"}>
             <WebDevelopmentProjects />
           </Box>
-        </Box>
 
-        <VoiceWorkSection />
+          <Box sx={{ display: "grid", gridTemplateColumns: "45% 45%", gridTemplateRows: "1fr 1fr 1fr", gap: "5% 5%",gridAutoFlow: "row"}}>
+            <VoiceworkSection />
+          </Box>
+        </Box>
 
         <Box className="contactSectionBox">
           <Typography className="sectionHeader">Contact</Typography>

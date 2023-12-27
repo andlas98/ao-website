@@ -19,14 +19,18 @@ export default function Home() {
   );
   
   const aboutMeText = (
-    <Typography variant="body2">
-      I design and develop web sites and web applications. My goal everytime I talk with a potential client is to
-      create products that respect modern standards and expertly display the
-      client's wishes, whether it be to expand their business online, showcase
-      their skillset, or anything else! 
-      
-      I also work on other disciplines on the side. See the Portfolio section below to see all of what I do!
-    </Typography>
+    <Box>
+      <Typography variant="body2">
+        I design and develop web sites and web applications. Every time I talk with a potential client is to
+        create products that respect modern standards and expertly display the
+        client&apos;s wishes, whether it be to expand their business online, showcase
+        their skillset, or anything else!
+      </Typography>
+      <br />
+      <Typography variant="body2">
+        I also practice other disciplines on the side. See the Portfolio section below to see all of what I do!
+      </Typography>
+    </Box>
   );
 
   const contactText = (
@@ -83,7 +87,7 @@ export default function Home() {
             <WebDevelopmentProjects />
           </Box>
 
-          <Box sx={{ display: "grid", gridTemplateColumns: "45% 45%", gridTemplateRows: "1fr 1fr 1fr", gap: "5% 5%",gridAutoFlow: "row"}}>
+          <Box className="justify-center" sx={{ display: "grid", gridTemplateColumns: "45% 45%", gridTemplateRows: "1fr 1fr 1fr", gap: "5% 2%",gridAutoFlow: "row"}}>
             <VoiceworkSection />
           </Box>
         </Box>

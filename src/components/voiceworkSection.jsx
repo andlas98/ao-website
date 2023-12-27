@@ -12,7 +12,7 @@ export default async function VoiceworkSection() {
             .find({})
             .toArray();
         var cards = projects.map((project)=> {
-            return <VoiceWorkCard
+            return <VoiceWorkCard key={project._id.$oid}
                 type={project.type}
                 name={project.name}
                 link={project.link}

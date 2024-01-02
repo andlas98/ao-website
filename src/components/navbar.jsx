@@ -2,9 +2,9 @@
 import React, {useState} from 'react';
 import SiteLogo from './sitelogo';
 import MenuIcon from '@mui/icons-material/Menu';
-import { AppBar, Toolbar, Button, Box, List, ListItem, ListItemText, Drawer, Divider} from '@mui/material';
+import { AppBar, Toolbar, Button, Box, List, ListItem, ListItemText, Drawer, Divider, Link} from '@mui/material';
 
-export const navbarItems = ["About Me", "Projects", "Contact"];
+export const navbarItems = {"About Me": "about-section", "Portfolio": "portfolio-section", "Contact": "contact-section"}
 
 function Navbar(props){
 
@@ -18,12 +18,20 @@ function Navbar(props){
     const {window} = props;
 
     const mobileDrawer = (
-        <Box>
+        <Box 
+        sx={{
+          backgroundColor: "black !important",
+        }}>
           <List>
-            {navbarItems.map((item) => (
-              <ListItem key={item}>
-                <ListItemText primary={item}></ListItemText>
-              </ListItem>
+            {Object.keys(navbarItems).map((item) => (
+              <Box>
+                <Link href={"#" + navbarItems[item]} underline="none" onClick={handleDrawerToggle}>
+                  <ListItem key={item}>
+                    <ListItemText sx={{color: "white"}} primary={item}></ListItemText>
+                  </ListItem>
+                </Link>
+                <Divider></Divider>
+              </Box>
             ))}
           </List>
         </Box>
@@ -37,15 +45,17 @@ function Navbar(props){
             <Toolbar className="navbarToolbar">
                 <SiteLogo />            
                 <Box sx={{ marginLeft: "auto", display: { xs: 'none', sm : 'none', md:"block" } }}>
-                    {navbarItems.map((item) => (
-                    <Button key={item} className="navbarButton">
-                        {item}
-                    </Button>
+                    {Object.keys(navbarItems).map((item) => (
+                      <Link href={"#" + navbarItems[item]} underline="none">
+                        <Button key={item} className="navbarButton">
+                            {item}
+                        </Button>
+                      </Link>
                     ))}
                 </Box>
                 <Box sx={{ display: {md: "none", lg: "none", xl: "none"} }}>                  
-                  <Button>
-                    <MenuIcon />
+                  <Button onClick={handleDrawerToggle}>
+                    <MenuIcon color='#FFF'/>
                   </Button>
                 </Box>
             </Toolbar>
@@ -60,8 +70,8 @@ function Navbar(props){
               keepMounted: true, // Better open performance on mobile.
             }}
             sx={{
-              display: { xs: 'block', sm: 'none' },
-              '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
+              display: { xs: 'block', sm: 'block', md:"none"},
+              '& .MuiDrawer-paper': { backgroundColor: "black", boxSizing: 'border-box', width: drawerWidth },
             }}
           >
             {mobileDrawer}

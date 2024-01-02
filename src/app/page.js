@@ -54,7 +54,7 @@ export default function Home() {
             <AndrewPortrait />
           </Box>
         </Box>
-        <Box className="aboutSectionBox">
+        <Box className="aboutSectionBox" id="about-section">
           <Typography className="sectionHeader">About Me</Typography>
           <LayeredPaper content={aboutMeText} />
           <Box
@@ -81,7 +81,7 @@ export default function Home() {
             </Button>
           </Box>
         </Box>
-        <Box className="portfolioSectionBox">
+        <Box className="portfolioSectionBox" id="portfolio-section">
           <Typography className="sectionHeader">Portfolio</Typography>
           <Box className="projectsBox" display={"flex"}>
             <WebDevelopmentProjects />
@@ -92,7 +92,7 @@ export default function Home() {
           </Box>
         </Box>
 
-        <Box className="contactSectionBox">
+        <Box className="contactSectionBox" id="contact-section">
           <Typography className="sectionHeader">Contact</Typography>
           <Box className="contactSectionContent">
             <LayeredPaper content={contactText} />

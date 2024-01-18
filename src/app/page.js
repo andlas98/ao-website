@@ -8,6 +8,7 @@ import DownloadRoundedIcon from "@mui/icons-material/DownloadRounded";
 import ContactForm from "@/components/contactForm";
 import WebDevelopmentProjects from "@/components/webDevelopmentProjectsSection";
 import VoiceworkSection from "../components/voiceworkSection";
+import TechnicalWritingCard from "../components/technicalWritingCard";
 
 export default function Home() { 
   const splashIntro = (
@@ -90,6 +91,8 @@ export default function Home() {
           <Box className="justify-center" sx={{ display: "grid", gridTemplateColumns: "45% 45%", gridTemplateRows: "1fr 1fr 1fr", gap: "5% 2%",gridAutoFlow: "row"}}>
             <VoiceworkSection />
           </Box>
+          <TechnicalWritingCard />
+          <TechnicalWritingCard />
         </Box>
 
         <Box className="contactSectionBox" id="contact-section">

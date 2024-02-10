@@ -6,9 +6,8 @@ import LavaBlob from "@/components/lavaBlob";
 import AndrewPortrait from "../../public/AndrewPortrait";
 import DownloadRoundedIcon from "@mui/icons-material/DownloadRounded";
 import ContactForm from "@/components/contactForm";
-import WebDevelopmentProjects from "@/components/webDevelopmentProjectsSection";
-import VoiceworkSection from "../components/voiceworkSection";
-import TechnicalWritingCard from "../components/technicalWritingCard";
+import TechnicalWritingSection from "@/components/technicalWritingCardSection";
+// import PortfolioDropdown from "@/components/portfolioDropdown";
 
 export default function Home() { 
   const splashIntro = (
@@ -84,15 +83,9 @@ export default function Home() {
         </Box>
         <Box className="portfolioSectionBox" id="portfolio-section">
           <Typography className="sectionHeader">Portfolio</Typography>
-          <Box className="projectsBox" display={"flex"}>
-            <WebDevelopmentProjects />
-          </Box>
+          {/* <PortfolioDropdown /> */}
+          <TechnicalWritingSection />
 
-          <Box className="justify-center" sx={{ display: "grid", gridTemplateColumns: "45% 45%", gridTemplateRows: "1fr 1fr 1fr", gap: "5% 2%",gridAutoFlow: "row"}}>
-            <VoiceworkSection />
-          </Box>
-          <TechnicalWritingCard />
-          <TechnicalWritingCard />
         </Box>
 
         <Box className="contactSectionBox" id="contact-section">

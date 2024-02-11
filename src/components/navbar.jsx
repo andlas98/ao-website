@@ -55,7 +55,7 @@ function Navbar(props){
               </Box>
               <Box sx={{ display: {md: "none", lg: "none", xl: "none"} }}>                  
                 <Button onClick={handleDrawerToggle}>
-                  <MenuIcon color='#FFF'/>
+                  <MenuIcon className='text-white'/>
                 </Button>
               </Box>
           </Toolbar>

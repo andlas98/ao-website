@@ -5,9 +5,11 @@ import LayeredPaper from "@/components/layeredPaper";
 import LavaBlob from "@/components/lavaBlob";
 import AndrewPortrait from "../../public/AndrewPortrait";
 import DownloadRoundedIcon from "@mui/icons-material/DownloadRounded";
-import ContactForm from "@/components/contactForm";
+import PortfolioDropdown from "@/components/portfolioDropdown";
+import WebDevelopmentProjects from "@/components/webDevelopmentProjectsSection";
+import VoiceworkSection from "@/components/VoiceWorkCard";
 import TechnicalWritingSection from "@/components/technicalWritingCardSection";
-// import PortfolioDropdown from "@/components/portfolioDropdown";
+import ContactForm from "@/components/contactForm";
 
 export default function Home() { 
   const splashIntro = (
@@ -83,8 +85,19 @@ export default function Home() {
         </Box>
         <Box className="portfolioSectionBox" id="portfolio-section">
           <Typography className="sectionHeader">Portfolio</Typography>
-          {/* <PortfolioDropdown /> */}
-          <TechnicalWritingSection />
+          <PortfolioDropdown> 
+            <Box className="projectsBox" display={"flex"}>
+                <WebDevelopmentProjects />
+            </Box>
+            <Box className="justify-center grid" sx={{ gridTemplateColumns: "45% 45%", gridTemplateRows: "1fr 1fr 1fr", gap: "5% 2%",gridAutoFlow: "row"}} >
+                  <VoiceworkSection />
+            </Box>
+          
+            <Box>
+                <TechnicalWritingSection />
+            </Box>
+
+          </PortfolioDropdown>
 
         </Box>
 

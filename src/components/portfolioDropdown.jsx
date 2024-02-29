@@ -19,7 +19,6 @@ export default function PortfolioDropdown(props){
         PaperProps: {
             style: {
                 backgroundColor: "black",
-                // backgroundColor: {theme.}
             },
         },
     };
@@ -42,9 +41,9 @@ export default function PortfolioDropdown(props){
         key={option} value={option} className="flex justify-center font-bold text-white bg-maroon hover:bg-deepRed transition ease-in-out delay-150 active: bg-deepRed">{option}</MenuItem>
     ))
 
-    return(
+    return (
         <Box className="flex flex-col">
-            <FormControl className="m-auto">
+            <FormControl className="m-auto mb-[3rem]">
                 <Select
                 value={selection}
                 className="text-center bg-deepRed font-bold text-white w-[436px]"

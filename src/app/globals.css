@@ -217,15 +217,18 @@ body {
   width: 75%;
   margin: auto;
   margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .projectsBox{
   flex-flow: row wrap;
   justify-content: space-between;
+  row-gap: 3%;
 }
 
 .webDevProjectCard{
-  width: 31%;
+  width: 48%;
 }
 
 .webDevProjectHero .webDevProjectDetails, .webDevProjectLinks{
@@ -316,12 +319,12 @@ body {
 .splashSectionBox::before{
   position: absolute;
   z-index: 3;
-  /* content: "XL"; */
+  content: "XL";
 }
 
 @media (max-width: 1200px) {
   .splashSectionBox::before{
-    /* content: "LG"; */
+    content: "LG";
     position: absolute;
     z-index: 3;
   }
@@ -340,7 +343,7 @@ body {
   .splashSectionBox::before{
     position: absolute;
     z-index: 3;
-    /* content: "MD"; */
+    content: "MD";
   }
   .navbarToolbar{
     display: flex;
@@ -351,7 +354,7 @@ body {
     margin-right: 1rem;
   }
   .webDevProjectCard{
-    width: 100%;
+    width: 49%;
     margin-bottom: 1rem;
   }
   .webDevProjectHero{
@@ -409,7 +412,7 @@ body {
     padding: 6rem 3rem;
   }
   .splashSectionBox::before{
-    /* content: "SM"; */
+    content: "SM";
     position: absolute;
     z-index: 3;
   }

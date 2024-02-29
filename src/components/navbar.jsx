@@ -24,7 +24,7 @@ function Navbar(props){
       }}>
         <List>
           {Object.keys(navbarItems).map((item) => (
-            <Box>
+            <Box key={item}>
               <Link href={"#" + navbarItems[item]} underline="none" onClick={handleDrawerToggle}>
                 <ListItem key={item}>
                   <ListItemText sx={{color: "white"}} primary={item}></ListItemText>
@@ -46,7 +46,7 @@ function Navbar(props){
               <SiteLogo />            
               <Box sx={{ marginLeft: "auto", display: { xs: 'none', sm : 'none', md:"block" } }}>
                   {Object.keys(navbarItems).map((item) => (
-                    <Link href={"#" + navbarItems[item]} underline="none">
+                    <Link key={item} href={"#" + navbarItems[item]} underline="none">
                       <Button key={item} className="navbarButton">
                           {item}
                       </Button>

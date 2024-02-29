@@ -66,14 +66,12 @@ export default function Home() {
             mt={"3.25rem"}
           >
             {/* TODO add functionality to download resumes */}
-            <a href="../../public/resumes/AndrewOhakamResume2023.docx" download>
-              <Button variant="contained" endIcon={<DownloadRoundedIcon />}>
+              <Button className="mb-[1rem]" variant="contained" endIcon={<DownloadRoundedIcon />}>
                 <Typography variant="button">
                   Download Resume{" "}
                   <span style={{ textTransform: "lowercase" }}>(.docx)</span>
                 </Typography>
               </Button>
-            </a>
 
             <Button variant="contained" endIcon={<DownloadRoundedIcon />}>
               <Typography variant="button">

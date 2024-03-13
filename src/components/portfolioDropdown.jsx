@@ -1,19 +1,16 @@
 "use client";
 import React from "react";
-import { Box, Select, MenuItem, FormControl, Menu } from "@mui/material";
-import styled from "@mui/material/styles";
-import InputBase from "@mui/material";
+import { Box, Select, MenuItem, FormControl } from "@mui/material";
 
 export const portfolioOptions = ["Frontend Web Development", "Voicework", "Technical Writing"];
 
-export default function PortfolioDropdown(props){
+export default function PortfolioDropdown({props, children}){
     const [selection, changeSelection] = React.useState("Frontend Web Development");
 
     const MenuProps = {
         SelectDisplayProps:{
             style:{
                 paddingTop:"none !important",
-
             }
         },
         PaperProps: {
@@ -25,7 +22,6 @@ export default function PortfolioDropdown(props){
 
     const inputProps = {
         InputProps: {
-
             style:{
                 backgroundColor:"orange",
             }
@@ -54,7 +50,7 @@ export default function PortfolioDropdown(props){
                     {allMenuItems}
                 </Select>
             </FormControl>
-            {props.children}
+            {children}
         </Box>
     )
 }

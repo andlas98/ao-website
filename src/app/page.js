@@ -85,7 +85,7 @@ export default function Home() {
           <Typography className="sectionHeader">Portfolio</Typography>
           <PortfolioDropdown> 
             <Box className="projectsBox" display={"flex"}>
-                <WebDevelopmentProjects />
+                {<WebDevelopmentProjects /> ? <WebDevelopmentProjects /> : console.log("Loading")}
             </Box>
             <Box className="justify-center grid" sx={{ gridTemplateColumns: "45% 45%", gridTemplateRows: "1fr 1fr 1fr", gap: "5% 2%",gridAutoFlow: "row"}} >
                   <VoiceworkSection />

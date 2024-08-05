@@ -23,22 +23,18 @@ export default function Home() {
   const aboutMeText = (
     <Box>
       <Typography variant="body2">
-        I design and develop web sites and web applications. Every time I talk with a potential client is to
-        create products that respect modern standards and expertly display the
-        client&apos;s wishes, whether it be to expand their business online, showcase
-        their skillset, or anything else!
+        I mainly design and develop web sites and web applications. One of my mottos is to "learn by doing", and I follow that by placing myself in spaces where I can develop web products for others to see.  
       </Typography>
       <br />
       <Typography variant="body2">
-        I also practice other disciplines on the side. See the Portfolio section below to see all of what I do!
+        I also practice other disciplines on the side. See the Portfolio section below to see some of what I dabble in!
       </Typography>
     </Box>
   );
 
   const contactText = (
     <Typography variant="body2">
-      Got an idea you want to bring to life? Shoot me an email so we can discuss
-      it!
+      Got an idea you want to bring to life? Shoot me an email so we can discuss it!
     </Typography>
   );
  
@@ -81,22 +77,24 @@ export default function Home() {
             </Button>
           </Box>
         </Box>
+
         <Box className="portfolioSectionBox" id="portfolio-section">
           <Typography className="sectionHeader">Portfolio</Typography>
           <PortfolioDropdown> 
-            <Box className="projectsBox" display={"flex"}>
-                {<WebDevelopmentProjects /> ? <WebDevelopmentProjects /> : console.log("Loading")}
+            
+            <Box selection="Frontend Web Development" className="projectsBox" display={"flex"}>
+              <WebDevelopmentProjects /> 
             </Box>
-            <Box className="justify-center grid" sx={{ gridTemplateColumns: "45% 45%", gridTemplateRows: "1fr 1fr 1fr", gap: "5% 2%",gridAutoFlow: "row"}} >
-                  <VoiceworkSection />
-            </Box>
+
+            {/* <Box selection="Voicework" className="justify-center grid" sx={{ gridTemplateColumns: "45% 45%", gridTemplateRows: "1fr 1fr 1fr", gap: "5% 2%",gridAutoFlow: "row"}} >
+              <VoiceworkSection />
+            </Box> */}
           
-            <Box>
-                <TechnicalWritingSection />
+            <Box selection="Technical Writing">
+              <TechnicalWritingSection />
             </Box>
 
           </PortfolioDropdown>
-
         </Box>
 
         <Box className="contactSectionBox" id="contact-section">

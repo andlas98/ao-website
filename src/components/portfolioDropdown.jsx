@@ -1,11 +1,19 @@
 "use client";
 import React from "react";
+import { Children } from "react";
 import { Box, Select, MenuItem, FormControl } from "@mui/material";
 
-export const portfolioOptions = ["Frontend Web Development", "Voicework", "Technical Writing"];
 
-export default function PortfolioDropdown({props, children}){
-    const [selection, changeSelection] = React.useState("Frontend Web Development");
+export default function PortfolioDropdown({children}) {
+    const [selection, changeSelection] = React.useState(children[0].props.selection);
+
+    var [filteredChildren, changeFilteredChildren] = React.useState(filterArrayOfDropdownChildren(selection))
+    
+    function filterArrayOfDropdownChildren(currentSelection){
+        var result = Children.toArray(children)
+        result = result.filter((child) => child.props.selection === currentSelection);
+        return result;
+    }
 
     const MenuProps = {
         SelectDisplayProps:{
@@ -30,11 +38,12 @@ export default function PortfolioDropdown({props, children}){
     
     const handleSelectionChange = (event) => {
         changeSelection(event.target.value);
+        changeFilteredChildren(filterArrayOfDropdownChildren(event.target.value))
     }
 
-    const allMenuItems = portfolioOptions.map((option) => (
+    const allMenuItems = children.map((child, index) => (
         <MenuItem 
-        key={option} value={option} className="flex justify-center font-bold text-white bg-maroon hover:bg-deepRed transition ease-in-out delay-150 active: bg-deepRed">{option}</MenuItem>
+        key={index} value={child.props.selection} className="flex justify-center font-bold text-white bg-maroon hover:bg-deepRed transition ease-in-out delay-150 active: bg-deepRed">{child.props.selection}</MenuItem>
     ))
 
     return (
@@ -50,7 +59,7 @@ export default function PortfolioDropdown({props, children}){
                     {allMenuItems}
                 </Select>
             </FormControl>
-            {children}
+            {filteredChildren}
         </Box>
     )
 }

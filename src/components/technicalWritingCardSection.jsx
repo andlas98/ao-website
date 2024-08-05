@@ -1,16 +1,9 @@
-import clientPromise from "../../mongodb";
 import TechnicalWritingCard from "./technicalWritingCard";
+import getAll from "../../pages/api/getAll";
 
 export default async function TechnicalWritingSection(){
     try {
-        const client = await clientPromise;
-        const db = client.db("database1");
-
-        const projects = await db
-            .collection("technical_writing_collection")
-            .find({})
-            .toArray();
-
+        const projects = await getAll("technical_writing_collection");
         var cards = projects.map((project)=> {
             return <TechnicalWritingCard key={project._id.$oid}
             documentTitle={project.document_title}
@@ -18,8 +11,10 @@ export default async function TechnicalWritingSection(){
             documentDescription={project.document_description}
             />
         });
+        
         return cards;
     } catch (e) {
-        console.error(e);
+        console.error("Error within technical writing section:", e);
+        return ("Error within technical writing section:", e);
     }
 }

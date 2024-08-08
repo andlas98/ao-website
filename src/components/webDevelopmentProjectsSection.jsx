@@ -1,4 +1,3 @@
-import clientPromise from '../../mongodb';
 import WebDevProjectCard from './WebDevProjectCard';
 import getAll from '../../pages/api/getAll';
 

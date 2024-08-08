@@ -7,7 +7,6 @@ import AndrewPortrait from "../../public/AndrewPortrait";
 import DownloadRoundedIcon from "@mui/icons-material/DownloadRounded";
 import PortfolioDropdown from "@/components/portfolioDropdown";
 import WebDevelopmentProjects from "@/components/webDevelopmentProjectsSection";
-import VoiceworkSection from "@/components/VoiceWorkCard";
 import TechnicalWritingSection from "@/components/technicalWritingCardSection";
 import ContactForm from "@/components/contactForm";
 
@@ -23,7 +22,7 @@ export default function Home() {
   const aboutMeText = (
     <Box>
       <Typography variant="body2">
-        I mainly design and develop web sites and web applications. One of my mottos is to "learn by doing", and I follow that by placing myself in spaces where I can develop web products for others to see.  
+        I mainly design and develop web sites and web applications. One of my mottos is to &quot;learn by doing&quot;, and I follow that by placing myself in spaces where I can develop web products for others to see.  
       </Typography>
       <br />
       <Typography variant="body2">

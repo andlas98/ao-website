@@ -15,6 +15,5 @@ export default async function TechnicalWritingSection(){
         return cards;
     } catch (e) {
         console.error("Error within technical writing section:", e);
-        return ("Error within technical writing section:", e);
     }
 }

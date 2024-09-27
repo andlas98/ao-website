@@ -19,6 +19,7 @@
     "eslint-config-next": "13.4.16",
     "express": "^4.18.2",
     "mongodb": "^6.2.0",
+    "netlify-cli": "^17.33.6",
     "next": "13.4.16",
     "postcss": "8.4.28",
     "react": "18.2.0",

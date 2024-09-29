@@ -225,14 +225,19 @@ body {
   flex-flow: row wrap;
   justify-content: space-between;
   row-gap: 3%;
+  display: flex;
 }
 
 .webDevProjectCard{
-  width: 48%;
+  width: 33%;
 }
 
 .webDevProjectHero .webDevProjectDetails, .webDevProjectLinks{
   width: 100%;
+}
+
+.webDevPoster {
+  border-radius: 0.625rem 0.625rem 0 0;
 }
 
 .webDevProjectHero{

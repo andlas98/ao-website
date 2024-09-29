@@ -6,7 +6,7 @@ const client = new MongoClient(MONGODB_URI)
 const clientPromise = client.connect()
 
 
-const handler = async () => {
+export default async function handler (){
   try {
     const database = (await clientPromise).db("database1");
 
@@ -20,5 +20,3 @@ const handler = async () => {
     return { statusCode: 500, body: error.toString() }
   }
 }
-
-module.exports = { handler }

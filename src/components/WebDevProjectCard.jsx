@@ -2,13 +2,14 @@
 import { Box, Typography, Link} from "@mui/material";
 import { GitHub } from "@mui/icons-material";
 import LaunchIcon from '@mui/icons-material/Launch';
+import Image from "next/image";
 
 export default function WebDevProjectCard (props) {
     return(
         <Box className="webDevProjectCard" display={'flex'} flexDirection={'column'}>
-            {/* <Box className="webDevProjectHero"> */}
-                {/* <img className="webDevPoster h-full w-full" src={props.poster} alt="project-poster" /> */}
-            {/* </Box> */}
+            <Box className="webDevProjectHero">
+                <Image className="webDevPoster h-full w-full" src={props.poster} alt="project-poster" /> 
+            </Box>
             <Box className="webDevProjectDetails">
                 <Typography className="webDevProjectTitle">
                     {props.projectTitle} ({props.yearOfInitialRelease})

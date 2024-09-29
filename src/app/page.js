@@ -81,7 +81,7 @@ export default function Home() {
           <Typography className="sectionHeader">Portfolio</Typography>
           <PortfolioDropdown> 
             
-            <Box selection="Frontend Web Development" className="projectsBox" display={"flex"}>
+            <Box selection="Frontend Web Development">
               <WebDevelopmentProjects /> 
             </Box>
 

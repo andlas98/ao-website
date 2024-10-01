@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Typography, Button } from "@mui/material";
+import "./globals.css";
 import Navbar from "@/components/navbar";
 import LayeredPaper from "@/components/layeredPaper";
 import LavaBlob from "@/components/lavaBlob";

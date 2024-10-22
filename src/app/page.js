@@ -41,7 +41,7 @@ export default function Home() {
   return (
     <div>
       <Navbar />
-      <main className="site-content flex min-h-screen flex-col justify-between">
+      <main className="site-content flex min-h-screen flex-col justify-between py-24 md:py-24 md:px-12">
         <Box className="splashSectionBox">
           <Box className="splashLayeredPaperBox">
             <LayeredPaper content={splashIntro}></LayeredPaper>

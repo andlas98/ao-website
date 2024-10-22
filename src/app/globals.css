@@ -17,19 +17,15 @@
 }
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 0, 0, 0;
   --deep-red: #ED2929;
   --maroon: #462222;
   --xl-breakpoint: 1536px;
   --lg-breakpoint: 1200px;
   --md-breakpoint: 900px;
   --sm-breakpoint: 600px;
-}
-
-.site-content{
-  padding: 6rem;
 }
 
 .MuiButton-contained{
@@ -60,36 +56,15 @@
   text-align: center;
   margin-top: 2.688rem;
   margin-bottom: 2.688rem;
+  color: var(--deep-red);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.deepColor{
+  color: var(--deep-red);
+}
 
-  .deepColor{
-    color: var(--deep-red);
-  }
-  
-  .sectionHeader{
-    color: var(--deep-red);
-  }
-
-  .bgPaper{
-    background-color: #0E0E0E; 
-  }
-
-  .fgPaper{
-    background-color: #141414;
-    color: white;
-  }
-
-  .MuiFilledInput-root{
-    background-color: white;
-  }
-    
+.MuiFilledInput-root {
+  background-color: white;
 }
 
 .MuiTypography-body1{
@@ -165,6 +140,16 @@ body {
   font-size: 1.8rem;
   padding: 3rem 2.813rem;
   box-shadow: none;
+}
+
+
+.bgPaper{
+  background-color: #0E0E0E; 
+}
+
+.fgPaper{
+  background-color: #141414;
+  color: white;
 }
 
 .bgPaper > .MuiTypography-root{color: transparent;}

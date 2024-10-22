@@ -1,15 +1,14 @@
 import React from "react";
 import { Box, Typography, Button } from "@mui/material";
-import "./globals.css";
 import Navbar from "@/components/navbar";
 import LayeredPaper from "@/components/layeredPaper";
 import LavaBlob from "@/components/lavaBlob";
 import AndrewPortrait from "../../public/AndrewPortrait";
 import DownloadRoundedIcon from "@mui/icons-material/DownloadRounded";
+import { LinkedIn } from "@mui/icons-material";
 import PortfolioDropdown from "@/components/portfolioDropdown";
 import WebDevelopmentProjects from "@/components/webDevelopmentProjectsSection";
 import TechnicalWritingSection from "@/components/technicalWritingCardSection";
-import ContactForm from "@/components/contactForm";
 
 export default function Home() { 
   const splashIntro = (
@@ -23,7 +22,7 @@ export default function Home() {
   const aboutMeText = (
     <Box>
       <Typography variant="body2">
-        I mainly design and develop web sites and web applications. One of my mottos is to &quot;learn by doing&quot;, and I follow that by placing myself in spaces where I can develop web products for others to see.  
+        I mainly design and develop web sites and web applications. One of my mottos is to &quot;learn by doing&quot;, and I follow that by placing myself in spaces where I can develop web products for others to see. 
       </Typography>
       <br />
       <Typography variant="body2">
@@ -34,7 +33,7 @@ export default function Home() {
 
   const contactText = (
     <Typography variant="body2">
-      Got an idea you want to bring to life? Shoot me an email so we can discuss it!
+      Got a question, or an idea you want to bring to life? Shoot me a message on <a target="_blank" href="https://www.linkedin.com/in/andrew-ohakam/"><LinkedIn/> LinkedIn</a> so we can discuss it!
     </Typography>
   );
  
@@ -101,7 +100,6 @@ export default function Home() {
           <Typography className="sectionHeader">Contact</Typography>
           <Box className="contactSectionContent">
             <LayeredPaper content={contactText} />
-            <ContactForm />
           </Box>
         </Box>
       </main>

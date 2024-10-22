@@ -36,6 +36,12 @@
   border-radius: 0.625rem;
   text-transform: capitalize;
   padding: 1rem 2rem;
+  background-color: var(--deep-red);
+}
+
+.MuiButton-contained:hover{
+  background-color: white;
+  color: var(--deep-red);
 }
 
 .MuiTypography-root{
@@ -63,15 +69,6 @@
     --background-end-rgb: 0, 0, 0;
   }
 
-  .MuiButton-contained{
-    background-color: var(--deep-red);
-  }
-
-  .MuiButton-contained:hover{
-    background-color: white;
-    color: var(--deep-red);
-  }
-
   .deepColor{
     color: var(--deep-red);
   }
@@ -89,7 +86,7 @@
     color: white;
   }
 
-  .contactFormBox  .MuiFilledInput-root{
+  .MuiFilledInput-root{
     background-color: white;
   }
     
@@ -290,28 +287,12 @@ body {
 }
 
 .contactSectionBox .layeredPaperDiv{
-  width: 48%;
+  width: 100%;
   margin-top: 2.5rem;
 }
 
 .contactSectionBox .layeredPaperDiv .bgPaper, .contactSectionBox .layeredPaperDiv .fgPaper {
   padding: 8.375rem 3rem;
-}
-
-.contactSectionBox .contactFormBox{
-  width: 45%;
-  display: flex;
-  flex-direction: column;
-}
-
-.contactSectionBox .contactFormBox .MuiButton-contained{
-  width: 70%;
-  margin: auto;
-}
-
-.contactFormBox .MuiFilledInput-root{
-  margin-bottom: 1.5rem;
-  border-radius: 0.625rem;
 }
 
 @media (min-width: 600px){
@@ -407,9 +388,6 @@ body {
   .contactSectionBox .layeredPaperDiv{
     width: 95%;
   }
-  .contactSectionBox .contactFormBox{
-    width: 100%;
-  }
 }
 
 @media (max-width: 600px) {
@@ -445,8 +423,5 @@ body {
   }
   .contactSectionBox .layeredPaperDiv .bgPaper, .contactSectionBox .layeredPaperDiv .fgPaper{
     padding: 2rem 1.813rem;
-  }
-  .contactSectionBox .contactFormBox .MuiButton-contained{
-    width: 100%;
   }
 }

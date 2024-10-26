@@ -23,6 +23,10 @@ module.exports = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
     },
+    fontFamily: {
+      'maven': ['"Maven Pro"', 'Oswald'],
+      'abel': ['Abel', '"Open Sans"'],
+    },
     screens: {
       "xl": "1536px",
       "lg": "1200px",

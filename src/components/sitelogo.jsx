@@ -6,7 +6,7 @@ function SiteLogo() {
     return (
         <Box display={"flex"}>
           <LogoIcon />
-          <Typography className="logoText" fontFamily={"Abel !important"}>
+          <Typography className="logoText text-[1.8rem] mt-auto mb-auto leading-[1.6875rem] pl-[0.75rem]" fontFamily={"Abel !important"}>
             Andrew<br />Ohakam
           </Typography>
         </Box>

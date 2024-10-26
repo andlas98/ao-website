@@ -2,18 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: "Maven Pro";
-  src: url(../fonts/MavenPro-Regular.ttf);
-}
-@font-face {
-  font-family: "Maven Pro";
-  src: url(../fonts/MavenPro-Bold.ttf);
-  font-weight: 700;
-}
-@font-face {
-  font-family: "Abel";
-  src: url(../fonts/Abel-Regular.ttf);
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+
+@layer base{
+  @font-face {
+    font-family: "Maven Pro";
+    src: url(../fonts/MavenPro-Regular.ttf);
+  }
+  @font-face {
+    font-family: "Maven Pro";
+    src: url(../fonts/MavenPro-Bold.ttf);
+    font-weight: 700;
+  }
+  @font-face {
+    font-family: "Abel";
+    src: url(../fonts/Abel-Regular.ttf);
+  }
 }
 
 :root {
@@ -41,7 +46,7 @@
 }
 
 .MuiTypography-root{
-  font-family: "Maven Pro";
+  font-family: "Maven Pro !important";
 }
 
 .MuiTypography-button{
@@ -113,15 +118,6 @@ body {
 
 .navbarButton:hover{
   background-color: gray;
-}
-
-
-.logoText{
-  font-size: 1.8rem;
-  margin-top: auto;
-  margin-bottom: auto;
-  line-height: 1.6875rem;
-  padding-left: 0.75rem;
 }
 
 .logoCircle{
@@ -214,18 +210,8 @@ body {
   width: 33%;
 }
 
-.webDevProjectHero .webDevProjectDetails, .webDevProjectLinks{
+.webDevProjectDetails, .webDevProjectLinks{
   width: 100%;
-}
-
-.webDevPoster {
-  border-radius: 0.625rem 0.625rem 0 0;
-}
-
-.webDevProjectHero{
-  background: white;
-  height: 10.25rem;
-  border-radius: 0.625rem 0.625rem 0 0;
 }
 
 .webDevProjectDetails, .webDevProjectLinks{
@@ -328,9 +314,6 @@ body {
     width: 49%;
     margin-bottom: 1rem;
   }
-  .webDevProjectHero{
-    height: 15rem;
-  } 
   .webDevProjectTitle{
     height: 6.125rem;
   }

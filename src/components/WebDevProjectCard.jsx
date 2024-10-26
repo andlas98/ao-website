@@ -7,8 +7,8 @@ import Image from "next/image";
 export default function WebDevProjectCard (props) {
     return(
         <Box className="webDevProjectCard" display={'flex'} flexDirection={'column'}>
-            <Box className="webDevProjectHero">
-                <Image className="webDevPoster h-full w-full" src={props.poster} alt="project-poster" /> 
+            <Box className="webDevProjectHero w-full h-[10.25rem] rounded-t-[0.625rem] bg-white md:h-[15rem]">
+                <Image className="rounded-t-[0.625rem 0.625rem] h-full w-full" src={props.poster} alt="project-poster" /> 
             </Box>
             <Box className="webDevProjectDetails">
                 <Typography className="webDevProjectTitle">

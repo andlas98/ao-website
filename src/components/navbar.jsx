@@ -4,7 +4,7 @@ import SiteLogo from './sitelogo';
 import MenuIcon from '@mui/icons-material/Menu';
 import { AppBar, Toolbar, Button, Box, List, ListItem, ListItemText, Drawer, Divider, Link } from '@mui/material';
 
-export const navbarItems = {"About Me": "about-section", "Portfolio": "portfolio-section", "Contact": "contact-section"}
+export const navbarItems = {"About Me": "about-section", "Portfolio": "portfolio-section"}
 
 function Navbar(props){
 

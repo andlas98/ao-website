@@ -108,12 +108,12 @@ export default function Home() {
             </PortfolioDropdown>
           </Box>
 
-          <Box className="contactSectionBox" id="contact-section">
+          {/* <Box className="contactSectionBox" id="contact-section">
             <Typography className="sectionHeader">Contact</Typography>
             <Box className="contactSectionContent">
               <LayeredPaper content={contactText} />
             </Box>
-          </Box>
+          </Box> */}
         </main>
       </StyledEngineProvider>
 

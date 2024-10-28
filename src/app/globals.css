@@ -234,7 +234,7 @@ body {
   height: 1.875rem;
 }
 
-.contactSectionContent{
+/* .contactSectionContent{
   display: flex;
   justify-content: space-between;
 }
@@ -246,7 +246,7 @@ body {
 
 .contactSectionBox .layeredPaperDiv .bgPaper, .contactSectionBox .layeredPaperDiv .fgPaper {
   padding: 8.375rem 3rem;
-}
+} */
 
 @media (min-width: 600px){
   .MuiToolbar-root.navbarToolbar{
@@ -323,7 +323,8 @@ body {
     margin: auto;
     margin-bottom: 1rem;
   }
-  .contactSectionBox .layeredPaperDiv{
+  
+  /* .contactSectionBox .layeredPaperDiv{
     margin-top: 0;
   }
   .contactSectionBox .layeredPaperDiv .bgPaper, .contactSectionBox .layeredPaperDiv .fgPaper {
@@ -337,7 +338,7 @@ body {
   }
   .contactSectionBox .layeredPaperDiv{
     width: 95%;
-  }
+  } */
 }
 
 @media (max-width: 600px) {
@@ -371,7 +372,7 @@ body {
   .webDevProjectTitle{
     height: fit-content;
   }
-  .contactSectionBox .layeredPaperDiv .bgPaper, .contactSectionBox .layeredPaperDiv .fgPaper{
+  /* .contactSectionBox .layeredPaperDiv .bgPaper, .contactSectionBox .layeredPaperDiv .fgPaper{
     padding: 2rem 1.813rem;
-  }
+  } */
 }

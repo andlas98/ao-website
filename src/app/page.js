@@ -1,23 +1,32 @@
 import React from "react";
-import { Box, Typography, Button } from "@mui/material";
+import { Box, Typography, Button} from "@mui/material";
+import ContactPill from "@/components/contactPill";
 import Navbar from "@/components/navbar";
 import LayeredPaper from "@/components/layeredPaper";
 import LavaBlob from "@/components/lavaBlob";
 import AndrewPortrait from "../../public/AndrewPortrait";
 import DownloadRoundedIcon from "@mui/icons-material/DownloadRounded";
-import { LinkedIn } from "@mui/icons-material";
+
 import PortfolioDropdown from "@/components/portfolioDropdown";
 import WebDevelopmentProjects from "@/components/webDevelopmentProjectsSection";
 import TechnicalWritingSection from "@/components/technicalWritingCardSection";
 import { StyledEngineProvider } from "@mui/material";
+import { GitHub, LinkedIn } from "@mui/icons-material";
 
 export default function Home() { 
   const splashIntro = (
-    <Typography variant="body1">
-      Hi! My name is <span className="deepColor">Andrew Ohakam</span>. <br />I
-      am a frontend developer creating{" "}
-      <span className="deepColor">web experiences</span>.
-    </Typography>
+    <Box className="text-white">
+      <Typography variant="body1">
+        Hi! My name is <span className="deepColor">Andrew Ohakam</span>. <br />I{"\'"}m a frontend developer creating{" "}
+        <span className="deepColor">web experiences</span>.
+      </Typography>
+      <Box className="contact-links-container flex relative mt-[2rem]">
+       <ContactPill link="https://github.com/andlas98" logo={<GitHub className="mr-[0.5rem]" />} linkTo="GitHub" />
+
+       <ContactPill link="https://www.linkedin.com/in/andrew-ohakam/" logo={<LinkedIn className="mr-[0.5rem]" />} linkTo="Linkedin" />
+      </Box>
+      
+    </Box>
   );
   
   const aboutMeText = (

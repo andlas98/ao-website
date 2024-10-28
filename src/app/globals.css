@@ -129,24 +129,6 @@ body {
 .layeredPaperDiv{
   position: relative;
 }
-/* 
-.bgPaper, .fgPaper {
-  width: 100%;
-  border-radius: 0.625rem;
-  font-size: 1.8rem;
-  padding: 3rem 2.813rem;
-  box-shadow: none;
-} */
-
-
-/* .bgPaper{
-  background-color: #0E0E0E; 
-}
-
-.fgPaper{
-  background-color: #141414;
-  color: white;
-} */
 
 .bgPaper > .MuiTypography-root{color: transparent;}
 

@@ -32,7 +32,7 @@ export default function Home() {
   const aboutMeText = (
     <Box>
       <Typography variant="body2">
-        I mainly design and develop web sites and web applications. One of my mottos is to &quot;learn by doing&quot;, and I follow that by placing myself in spaces where I can develop web products for others to see. 
+        I mainly design and develop web sites and web applications. One of my mottos is to &quot;learn by doing&quot;, and I follow that by developing web products for others to see. 
       </Typography>
       <br />
       <Typography variant="body2">
@@ -72,7 +72,7 @@ export default function Home() {
               justifyContent={"space-around"}
               mt={"3.25rem"}
             >
-              {/* TODO add functionality to download resumes */}
+              {/* TODO change download btns to single contactPill with link to resume docx (wiew only link) on OneDrive*/}
                 <Button className="mb-[1rem]" variant="contained" endIcon={<DownloadRoundedIcon />}>
                   <Typography variant="button">
                     Download Resume{" "}

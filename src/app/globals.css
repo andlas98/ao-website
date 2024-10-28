@@ -4,7 +4,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
-
 @layer base{
   @font-face {
     font-family: "Maven Pro";
@@ -255,7 +254,8 @@ body {
   }
 }
 
-.splashSectionBox::before{
+/* TODO: Remove the sizing notes from the top left corner of the splash intro */
+.splashSectionBox::before {
   position: absolute;
   z-index: 3;
   content: "XL";

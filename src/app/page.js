@@ -19,7 +19,7 @@ export default function Home() {
         Hi! My name is <span className="deepColor">Andrew Ohakam</span>. <br />I{"\'"}m a frontend developer creating{" "}
         <span className="deepColor">web experiences</span>.
       </Typography>
-      <Box className="contact-links-container flex relative mt-[2rem]">
+      <Box className="contact-links-container flex flex-row mt-[2rem] max-sm:flex-col max-sm:w-fit gap-y-[1rem] justify-center mx-[auto]">
        <ContactPill link="https://github.com/andlas98" logo={<GitHub className="mr-[0.5rem]" />} linkTo="GitHub" />
 
        <ContactPill link="https://www.linkedin.com/in/andrew-ohakam/" logo={<LinkedIn className="mr-[0.5rem]" />} linkTo="Linkedin" />
@@ -52,7 +52,7 @@ export default function Home() {
        <StyledEngineProvider injectFirst>
 
         <Navbar />
-        <main className="site-content flex min-h-screen flex-col justify-between py-24 md:py-24 md:px-12">
+        <main className="site-content flex min-h-screen flex-col justify-between py-24 px-12">
           <Box className="splashSectionBox">
             <Box className="splashLayeredPaperBox">
               <LayeredPaper content={splashIntro}></LayeredPaper>

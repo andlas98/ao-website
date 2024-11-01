@@ -30,7 +30,7 @@ export default async function WebDevelopmentProjects() {
                 poster={TBX}
                 projectTitle="Tokyo Bronx"
                 yearOfInitialRelease="2024"
-                projectDescription={`Website for a Japanese pop-culture themed social club. Developed with/hosted on WordPress. Plugins allow users to view most recent social media posts, and adds honeypots to site{"\'"}s contact section.`}
+                projectDescription={`Website for a Japanese pop-culture themed social club. Developed with/hosted on WordPress. Plugins allow users to view most recent social media posts, and adds honeypots to site\'s contact section.`}
                 projectLink="https://tokyobronx.com/"
             />
             <WebDevProjectCard

@@ -1,8 +1,9 @@
 import WebDevProjectCard from './WebDevProjectCard';
 import handler from "../get_web_dev_entries/get_web_dev_entries";
-import GNA from "../imgs/GamingNewsAggregator.png"
-import Kirklands from "../imgs/KirklandsCleaningServices.png"
-import Ublincd from "../imgs/Ublincd.png"
+import GNA from "../imgs/GamingNewsAggregator.png";
+import Kirklands from "../imgs/KirklandsCleaningServices.png";
+import Ublincd from "../imgs/Ublincd.png";
+import TBX from "../imgs/TokyoBronx.png";
 
 export default async function WebDevelopmentProjects() {    
 
@@ -25,6 +26,13 @@ export default async function WebDevelopmentProjects() {
     // }
     return (
         <div className="projectsBox">
+            <WebDevProjectCard
+                poster={TBX}
+                projectTitle="Tokyo Bronx"
+                yearOfInitialRelease="2024"
+                projectDescription={`Website for a Japanese pop-culture themed social club. Developed with/hosted on WordPress. Plugins allow users to view most recent social media posts, and adds honeypots to site{"\'"}s contact section.`}
+                projectLink="https://tokyobronx.com/"
+            />
             <WebDevProjectCard
                 poster={Kirklands}
                 projectTitle="Kirklands Cleaning Service"

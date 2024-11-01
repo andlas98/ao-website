@@ -8,7 +8,7 @@ export default function WebDevProjectCard (props) {
     return(
         <Box className="webDevProjectCard" display={'flex'} flexDirection={'column'}>
             <Box className="webDevProjectHero w-full h-[10.25rem] rounded-t-[0.625rem] bg-white md:h-[15rem]">
-                <Image className="rounded-t-[0.625rem 0.625rem] h-full w-full" src={props.poster} alt="project-poster" /> 
+                <Image className="rounded-t-[0.625rem] h-full w-full" src={props.poster} alt="project-poster" /> 
             </Box>
             <Box className="webDevProjectDetails">
                 <Typography className="webDevProjectTitle">
@@ -21,9 +21,9 @@ export default function WebDevProjectCard (props) {
                     <Link target="_blank" rel="noopener" href={props.projectLink}>
                         <LaunchIcon />
                     </Link>
-                    <Link target="_blank" rel="noopener" href={props.gitHubLink || "www.google.com"}>
-                        <GitHub />
-                    </Link>
+                    {props.gitHubLink ? <Link target="_blank" rel="noopener" href={props.gitHubLink}>
+                        {props.gitHubLink ? <GitHub /> : <noscript></noscript>}
+                    </Link> : <noscript></noscript>}
                 </Box>
             </Box>
         </Box>

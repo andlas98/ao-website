@@ -6,7 +6,6 @@ import LayeredPaper from "@/components/layeredPaper";
 import LavaBlob from "@/components/lavaBlob";
 import AndrewPortrait from "../../public/AndrewPortrait";
 import DownloadRoundedIcon from "@mui/icons-material/DownloadRounded";
-
 import PortfolioDropdown from "@/components/portfolioDropdown";
 import WebDevelopmentProjects from "@/components/webDevelopmentProjectsSection";
 import TechnicalWritingSection from "@/components/technicalWritingCardSection";

@@ -166,7 +166,6 @@ body {
 
 .lavaLampBox .andrewPortrait{
   position: relative;
-  /* margin: auto; */
   margin-top: 15%;
   margin-left: 35%;
   max-width: 12.5rem;
@@ -233,20 +232,6 @@ body {
   height: 1.875rem;
 }
 
-/* .contactSectionContent{
-  display: flex;
-  justify-content: space-between;
-}
-
-.contactSectionBox .layeredPaperDiv{
-  width: 100%;
-  margin-top: 2.5rem;
-}
-
-.contactSectionBox .layeredPaperDiv .bgPaper, .contactSectionBox .layeredPaperDiv .fgPaper {
-  padding: 8.375rem 3rem;
-} */
-
 @media (min-width: 600px){
   .MuiToolbar-root.navbarToolbar{
     padding-left: 5rem;
@@ -254,20 +239,6 @@ body {
   }
 }
 
-/* TODO: Remove the sizing notes from the top left corner of the splash intro */
-.splashSectionBox::before {
-  position: absolute;
-  z-index: 3;
-  content: "XL";
-}
-
-@media (max-width: 1200px) {
-  .splashSectionBox::before{
-    content: "LG";
-    position: absolute;
-    z-index: 3;
-  }
-}
 
 @media (max-width: 900px) {
   .MuiTypography-button, .MuiTypography-body2, .navbarButton{
@@ -278,11 +249,6 @@ body {
   }
   .sectionHeader{
     font-size: 2.6rem;
-  }
-  .splashSectionBox::before{
-    position: absolute;
-    z-index: 3;
-    content: "MD";
   }
   .navbarToolbar{
     display: flex;
@@ -323,32 +289,11 @@ body {
     margin: auto;
     margin-bottom: 1rem;
   }
-  
-  /* .contactSectionBox .layeredPaperDiv{
-    margin-top: 0;
-  }
-  .contactSectionBox .layeredPaperDiv .bgPaper, .contactSectionBox .layeredPaperDiv .fgPaper {
-    padding: 3rem 2.813rem;
-  }
-  .contactSectionContent {
-    flex-direction: column;
-  }
-  .contactSectionBox .layeredPaperDiv{
-    margin-bottom: 2.5rem ;
-  }
-  .contactSectionBox .layeredPaperDiv{
-    width: 95%;
-  } */
 }
 
 @media (max-width: 600px) {
   .site-content{
     padding: 6rem 3rem;
-  }
-  .splashSectionBox::before{
-    content: "SM";
-    position: absolute;
-    z-index: 3;
   }
   .bgPaper{
     margin-top: 1rem;
@@ -372,7 +317,4 @@ body {
   .webDevProjectTitle{
     height: fit-content;
   }
-  /* .contactSectionBox .layeredPaperDiv .bgPaper, .contactSectionBox .layeredPaperDiv .fgPaper{
-    padding: 2rem 1.813rem;
-  } */
 }

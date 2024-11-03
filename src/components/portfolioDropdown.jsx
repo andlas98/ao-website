@@ -51,7 +51,7 @@ export default function PortfolioDropdown({children}) {
             <FormControl className="m-auto mb-[3rem]">
                 <Select
                 value={selection}
-                className="text-center bg-deepRed font-bold text-white w-[436px]"
+                className="text-center bg-deepRed font-bold text-white w-[436px] max-sm:w-[100%]"
                 onChange={handleSelectionChange}
                 MenuProps={MenuProps}
                 inputProps={inputProps}

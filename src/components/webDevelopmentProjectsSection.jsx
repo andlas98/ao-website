@@ -1,5 +1,4 @@
 import WebDevProjectCard from './WebDevProjectCard';
-import handler from "../get_web_dev_entries/get_web_dev_entries";
 import GNA from "../imgs/GamingNewsAggregator.png";
 import Kirklands from "../imgs/KirklandsCleaningServices.png";
 import Ublincd from "../imgs/Ublincd.png";
@@ -7,23 +6,6 @@ import TBX from "../imgs/TokyoBronx.png";
 
 export default async function WebDevelopmentProjects() {    
 
-    // let entries = await handler();
-    // try {
-    //     var cards = entries.map((project)=> {
-    //         return <WebDevProjectCard
-    //             key={project._id.$oid}
-    //             // poster={project.poster}
-    //             projectTitle={project.projectname}
-    //             yearOfInitialRelease={project.yearOfInitialRelease}
-    //             projectDescription={project.description}
-    //             projectLink={project.link}
-    //             gitHubLink={project.link_github}
-    //         />
-    //     })
-    //     return cards;
-    // } catch (e) {
-    //     console.error("Error (Web Development Section)", e);
-    // }
     return (
         <div className="projectsBox">
             <WebDevProjectCard

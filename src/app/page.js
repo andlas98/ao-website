@@ -13,22 +13,22 @@ import { StyledEngineProvider } from "@mui/material";
 import { GitHub, LinkedIn } from "@mui/icons-material";
 
 export default function Home() { 
-  const splashIntro = (
+  const splashIntroContent = (
     <Box className="text-white">
       <Typography variant="body1">
         Hi! My name is <span className="deepColor">Andrew Ohakam</span>. <br />I{"\'"}m a frontend developer creating{" "}
         <span className="deepColor">web experiences</span>.
       </Typography>
-      <Box className="contact-links-container flex flex-row mt-[2rem] max-sm:flex-col max-sm:w-fit gap-y-[1rem] justify-center mx-[auto]">
-       <ContactPill link="https://github.com/andlas98" logo={<GitHub className="mr-[0.5rem]" />} linkTo="GitHub" />
+      <Box className="contact-links-container flex flex-row gap-x-[1rem] mt-[2rem] max-sm:flex-col max-sm:w-fit max-sm:gap-y-[1rem] max-sm:justify-center mx-[auto]">
+       <ContactPill link="https://github.com/andlas98" logo={<GitHub />} linkTo="GitHub" />
 
-       <ContactPill link="https://www.linkedin.com/in/andrew-ohakam/" logo={<LinkedIn className="mr-[0.5rem]" />} linkTo="Linkedin" />
+       <ContactPill link="https://www.linkedin.com/in/andrew-ohakam/" logo={<LinkedIn />} linkTo="Linkedin" />
       </Box>
       
     </Box>
   );
   
-  const aboutMeText = (
+  const aboutMeContent = (
     <Box>
       <Typography variant="body2">
         I mainly design and develop web sites and web applications. One of my mottos is to &quot;learn by doing&quot;, and I follow that by developing web products for others to see. 
@@ -37,6 +37,10 @@ export default function Home() {
       <Typography variant="body2">
         I also practice other disciplines on the side. See the Portfolio section below to see some of what I dabble in!
       </Typography>
+      <Box className="mt-[3rem]">
+        <ContactPill link="https://1drv.ms/w/s!Aug_bt4TU7qlgeBRNg0C7YiyPmFYVQ?e=RxlfHJ" logo={<DownloadRoundedIcon />} linkTo="View Resume" />
+      </Box>
+
     </Box>
   );
 
@@ -55,7 +59,7 @@ export default function Home() {
         <main className="site-content flex min-h-screen flex-col justify-between py-24 px-12">
           <Box className="splashSectionBox">
             <Box className="splashLayeredPaperBox">
-              <LayeredPaper content={splashIntro}></LayeredPaper>
+              <LayeredPaper content={splashIntroContent}></LayeredPaper>
             </Box>
             <Box className="lavaLampBox">
               <LavaBlob />
@@ -64,28 +68,7 @@ export default function Home() {
           </Box>
           <Box className="aboutSectionBox" id="about-section">
             <Typography className="sectionHeader">About Me</Typography>
-            <LayeredPaper content={aboutMeText} />
-            <Box
-              className="downloadBtnsBox"
-              display={"flex"}
-              justifyContent={"space-around"}
-              mt={"3.25rem"}
-            >
-              {/* TODO change download btns to single contactPill with link to resume docx (wiew only link) on OneDrive*/}
-                <Button className="mb-[1rem]" variant="contained" endIcon={<DownloadRoundedIcon />}>
-                  <Typography variant="button">
-                    Download Resume{" "}
-                    <span style={{ textTransform: "lowercase" }}>(.docx)</span>
-                  </Typography>
-                </Button>
-
-              <Button variant="contained" endIcon={<DownloadRoundedIcon />}>
-                <Typography variant="button">
-                  Download Resume{" "}
-                  <span style={{ textTransform: "lowercase" }}>(.pdf)</span>
-                </Typography>
-              </Button>
-            </Box>
+            <LayeredPaper content={aboutMeContent} />
           </Box>
 
           <Box className="portfolioSectionBox" id="portfolio-section">
@@ -95,10 +78,6 @@ export default function Home() {
               <Box selection="Frontend Web Development">
                 <WebDevelopmentProjects /> 
               </Box>
-
-              {/* <Box selection="Voicework" className="justify-center grid" sx={{ gridTemplateColumns: "45% 45%", gridTemplateRows: "1fr 1fr 1fr", gap: "5% 2%",gridAutoFlow: "row"}} >
-                <VoiceworkSection />
-              </Box> */}
             
               <Box selection="Technical Writing">
                 <TechnicalWritingSection />
@@ -107,12 +86,6 @@ export default function Home() {
             </PortfolioDropdown>
           </Box>
 
-          {/* <Box className="contactSectionBox" id="contact-section">
-            <Typography className="sectionHeader">Contact</Typography>
-            <Box className="contactSectionContent">
-              <LayeredPaper content={contactText} />
-            </Box>
-          </Box> */}
         </main>
       </StyledEngineProvider>
 

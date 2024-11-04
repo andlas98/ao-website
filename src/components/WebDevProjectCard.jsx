@@ -6,15 +6,15 @@ import Image from "next/image";
 
 export default function WebDevProjectCard (props) {
     return(
-        <Box className="webDevProjectCard" display={'flex'} flexDirection={'column'}>
-            <Box className="webDevProjectHero w-full h-[10.25rem] rounded-t-[0.625rem] bg-white md:h-[15rem]">
+        <Box className="webDevProjectCard max-md:ml-auto  max-md:mr-auto max-md:w-[75%]" display={'flex'} flexDirection={'column'}>
+            <Box className="webDevProjectHero w-full h-[10.25rem] rounded-t-[0.625rem] bg-white max-md:h-[15rem]">
                 <Image className="rounded-t-[0.625rem] h-full w-full" src={props.poster} alt="project-poster" /> 
             </Box>
             <Box className="webDevProjectDetails">
                 <Typography className="webDevProjectTitle">
                     {props.projectTitle} ({props.yearOfInitialRelease})
                 </Typography>
-                <Typography variant='body2' className="webDevProjectDescription">
+                <Typography variant='body2' className="webDevProjectDescription max-md:h-fit mx-md:min-h-fit">
                     {props.projectDescription}
                 </Typography>
                 <Box className="webDevProjectLinks">

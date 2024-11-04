@@ -44,13 +44,6 @@ export default function Home() {
     </Box>
   );
 
-  const contactText = (
-    <Typography variant="body2">
-      Got a question, or an idea you want to bring to life? Shoot me a message on <a target="_blank" href="https://www.linkedin.com/in/andrew-ohakam/"><LinkedIn/> LinkedIn</a> so we can discuss it!
-    </Typography>
-  );
- 
-
   return (
     <div>
        <StyledEngineProvider injectFirst>

@@ -259,11 +259,11 @@ body {
     margin-right: 1rem;
   }
   .webDevProjectCard{
-    width: 49%;
+    width: 100%;
     margin-bottom: 1rem;
   }
   .webDevProjectTitle{
-    height: 6.125rem;
+    height: fit-content;
   }
   .splashSectionBox{
     flex-direction: column-reverse;

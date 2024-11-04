@@ -89,5 +89,6 @@
 	.bm-pl__blob{
 		width: 15em;
     	height: 15em;
+		left: -0.5rem;
 	}
 }

@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function WebDevProjectCard (props) {
     return(
-        <Box className="webDevProjectCard max-md:ml-auto  max-md:mr-auto max-md:w-[75%]" display={'flex'} flexDirection={'column'}>
+        <Box className="webDevProjectCard max-md:ml-auto flex flex-col max-md:mr-auto max-sm:w-[100%]">
             <Box className="webDevProjectHero w-full h-[10.25rem] rounded-t-[0.625rem] bg-white max-md:h-[15rem]">
                 <Image className="rounded-t-[0.625rem] h-full w-full" src={props.poster} alt="project-poster" /> 
             </Box>

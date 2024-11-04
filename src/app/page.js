@@ -57,7 +57,7 @@ export default function Home() {
             <Box className="lavaLampBox">
               <LavaBlob />
               <Box>
-              <AndrewPortrait className="max-sm:m-w-[5rem] max-sm:h-[5rem]"/>
+              <AndrewPortrait />
               </Box>
             </Box>
           </Box>

@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Typography, Button} from "@mui/material";
+import { Box, Typography, Link} from "@mui/material";
 import ContactPill from "@/components/contactPill";
 import Navbar from "@/components/navbar";
 import LayeredPaper from "@/components/layeredPaper";
@@ -76,6 +76,15 @@ export default function Home() {
             <PortfolioDropdown> 
               
               <Box selection="Frontend Web Development">
+                <Box className="flex justify-center items-center max-md:flex-col">
+                  <Box className="flex mt-[0.5rem] max-md:items-center max-md:mb-[1rem]">
+                    <Typography className="">GitHub Contributions</Typography>
+                    <Link href="https://github.com/andlas98" target="_blank" className="text-white max-md:ml-[1rem]">
+                      <GitHub className="w-[3rem] h-[3rem]"/>
+                    </Link>
+                  </Box>
+                  <iframe src="https://pages.codeadam.ca/github-contributions/andlas98" className="w-full h-[190px]" frameborder="0" allowtransparency id="iframe"></iframe>
+                </Box>
                 <WebDevelopmentProjects /> 
               </Box>
             

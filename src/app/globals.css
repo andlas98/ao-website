@@ -296,14 +296,15 @@ body {
     padding: 6rem 3rem;
   }
   .bgPaper{
-    margin-top: 1rem;
-    margin-left: 1rem;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
   }
   .bgPaper, .fgPaper {
     padding: 2rem 1.813rem;
   }
   .lavaLampBox .andrewPortrait{
     margin-top: 2rem;
+    max-width: 10.5rem;
   }
   .downloadBtnsBox {
     width: 85%;

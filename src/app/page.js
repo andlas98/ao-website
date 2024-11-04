@@ -19,7 +19,7 @@ export default function Home() {
         Hi! My name is <span className="deepColor">Andrew Ohakam</span>. <br />I{"\'"}m a frontend developer creating{" "}
         <span className="deepColor">web experiences</span>.
       </Typography>
-      <Box className="contact-links-container flex flex-row gap-x-[1rem] mt-[2rem] max-sm:flex-col max-sm:w-fit max-sm:gap-y-[1rem] max-sm:justify-center mx-[auto]">
+      <Box className="contact-links-container flex flex-row gap-x-[1rem] mt-[2rem] max-sm:flex-col max-sm:w-fit max-sm:gap-y-[1rem] max-sm:justify-center max-sm:items-center mx-[auto]">
        <ContactPill link="https://github.com/andlas98" logo={<GitHub />} linkTo="GitHub" />
 
        <ContactPill link="https://www.linkedin.com/in/andrew-ohakam/" logo={<LinkedIn />} linkTo="Linkedin" />
@@ -49,14 +49,16 @@ export default function Home() {
        <StyledEngineProvider injectFirst>
 
         <Navbar />
-        <main className="site-content flex min-h-screen flex-col justify-between py-24 px-12">
+        <main className="site-content flex min-h-screen flex-col justify-between py-24 px-12 max-sm:px-6">
           <Box className="splashSectionBox">
             <Box className="splashLayeredPaperBox">
               <LayeredPaper content={splashIntroContent}></LayeredPaper>
             </Box>
             <Box className="lavaLampBox">
               <LavaBlob />
-              <AndrewPortrait />
+              <Box>
+              <AndrewPortrait className="max-sm:m-w-[5rem] max-sm:h-[5rem]"/>
+              </Box>
             </Box>
           </Box>
           <Box className="aboutSectionBox" id="about-section">

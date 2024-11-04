@@ -87,8 +87,8 @@
 
 @media (max-width: 600px) {
 	.bm-pl__blob{
-		width: 15em;
-    	height: 15em;
+		width: 14em;
+    	height: 14em;
 		left: -0.5rem;
 	}
 }

@@ -3,7 +3,7 @@ import { Button, Box, Typography} from "@mui/material"
 export default function TechnicalWritingCard(props){
     let { documentTitle, documentDescription, documentLink } = props;
     return(
-        <Box className="w-[60vw] bg-maroon flex rounded-reg p-[1.5rem] mb-[2rem] m-auto max-md:flex-col">
+        <Box className="w-[60vw] bg-maroon flex rounded-reg p-[1.5rem] mb-[2rem] m-auto max-md:flex-col max-md:w-full">
             <Box className="w-[80%] max-md:w-full">
                 <Typography className="technicalWritingCardTitle font-bold mb-[1.5rem]">
                     {documentTitle}

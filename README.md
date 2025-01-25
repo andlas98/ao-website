@@ -1,7 +1,7 @@
 # Andlas98 Portfolio Site (version 2.0)
 
 ## Purpose
-The last website I made to showcase my programming portfolio was created as a college project. I wanted something minimalist, dark in tone, and this was the final result!
+The last website I made to showcase my programming portfolio was created as a college project. I wanted a do-over, a minimalist and dark in tone doover, and this was the final result! Updates will come as I make more projects!
 
 
 ## Tools Used:

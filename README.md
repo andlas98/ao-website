@@ -3,14 +3,14 @@
 ## Purpose
 The last website I made to showcase my programming portfolio was created as a college project. I wanted a do-over, a minimalist and dark in tone doover, and this was the final result! Updates will come as I make more projects!
 
-
 ## Tools Used:
 - NextJS (bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app))
 - [Tailwind](https://tailwindcss.com/)
 - [Netlify](https://www.netlify.com/)
 - [Figma](https://www.figma.com/)
+- [NodeJS](https://nodejs.org/en)
 
-## How to Run Locally (in case future me forgets)
+## How to Run Locally
 
 First, run the development server:
 

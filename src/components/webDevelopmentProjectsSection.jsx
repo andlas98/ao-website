@@ -9,6 +9,14 @@ export default async function WebDevelopmentProjects() {
     return (
         <div className="projectsBox">
             <WebDevProjectCard
+                poster={GNA}
+                projectTitle="Gaming News Aggregator"
+                yearOfInitialRelease="2024"
+                projectDescription="A remake of a website I created in the early 2020's. Constructed with React Typescript and Tailwind. Hosted with Netlify."
+                projectLink="https://gaming-news-aggregator.netlify.app/"
+                gitHubLink="https://github.com/andlas98/GNA_Redux"
+            />
+            <WebDevProjectCard
                 poster={TBX}
                 projectTitle="Tokyo Bronx"
                 yearOfInitialRelease="2024"
@@ -30,14 +38,6 @@ export default async function WebDevelopmentProjects() {
                 projectDescription="Worked with an artist to create a site advertising his latest work. Made with HTML, CSS, MUI, and JavaScript, and hosted on Hostinger."
                 projectLink="https://ublincd.com/"
                 gitHubLink="https://github.com/andlas98/LANCER_ublincd_site"
-            />
-            <WebDevProjectCard
-                poster={GNA}
-                projectTitle="Gaming News Aggregator"
-                yearOfInitialRelease="2019"
-                projectDescription="Inspired by the desire to read gaming news from various sources on one site. Constructed with HTML, CSS, and JavaScript. Hosted with GitHub Pages."
-                projectLink="https://andlas98.github.io/GNA_Redux/"
-                gitHubLink="https://github.com/andlas98/GNA_Redux"
             />
         </div>
     );

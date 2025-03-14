@@ -1,6 +1,3 @@
 [build]
   publish = ".next"
   functions = "netlify/functions"
-
-[functions]
-  timeout = 20

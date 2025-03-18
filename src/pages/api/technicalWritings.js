@@ -18,7 +18,11 @@ export default async function handler(req, res) {
         const client = await clientPromise;
         const database = client.db("database1");
         const collection = database.collection("technical_writing_collection");
-        const technicalWritings = await collection.find({}).toArray();
+
+        // Example query: Find documents where `document_title` matches a specific value
+        const query = req.query.title ? { document_title: req.query.title } : {};
+        const technicalWritings = await collection.find(query).toArray();
+
         res.status(200).json(technicalWritings);
     } catch (error) {
         res.status(500).json({ error: "Failed to fetch data" });

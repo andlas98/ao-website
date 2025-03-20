@@ -24,7 +24,6 @@ export default function Home() {
 
        <ContactPill link="https://www.linkedin.com/in/andrew-ohakam/" logo={<LinkedIn />} linkTo="Linkedin" />
       </Box>
-      
     </Box>
   );
   

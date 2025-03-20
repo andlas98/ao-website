@@ -1,47 +1,16 @@
 "use client";
 import TechnicalWritingCard from "./technicalWritingCard";
 import { Box } from "@mui/material";
-import { fetchTechnicalWriting } from "../utils/fetchTechnicalWriting";
-import { useEffect, useState } from "react";
 
 export default function TechnicalWritingSection() {
-    const [technicalWritings, setTechnicalWritings] = useState([]);
-
-    useEffect(() => {
-        let isMounted = true;
-
-        async function getTechnicalWritings() {
-            try {
-                const data = await fetchTechnicalWriting();
-                console.log("Fetched technical writings:", data);
-                if (isMounted) {
-                    setTechnicalWritings(Array.isArray(data) ? data : []);
-                }
-            } catch (error) {
-                console.error("Failed to fetch technical writings:", error);
-                if (isMounted) {
-                    setTechnicalWritings([]);
-                }
-            }
-        }
-
-        getTechnicalWritings();
-
-        return () => {
-            isMounted = false;
-        };
-    }, []);
 
     return (
         <Box>
-            {technicalWritings.map((writing) => (
-                <TechnicalWritingCard
-                    key={writing._id}
-                    documentTitle={writing.document_title}
-                    documentLink={writing.document_link}
-                    documentDescription={writing.document_description}
-                />
-            ))}
+            <TechnicalWritingCard
+            documentTitle={"Getting Started with Microsoft To-Dos"}
+            documentLink={"https://1drv.ms/w/s!Aug_bt4TU7qlgecPIv4cnmC57TMgLg?e=CNKGWG"}
+            documentDescription={"I created this mini-manual as a guide for employees at a non-profit company to better track how they record and report their weekly tasks. The company was renamed to Doe LLC in the document for anonymity\'s sake"}
+            />
         </Box>
     );
 }

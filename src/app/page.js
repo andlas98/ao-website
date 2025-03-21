@@ -86,6 +86,15 @@ export default function Home() {
                 <TechnicalWritingSection />
               </Box>
 
+              <Box selection="Voicework">
+                <Typography className="underline font-bold !mb-[1.5rem]">
+                  MackMakesAudiobooks (2023-2024)
+                </Typography>
+                <Typography>
+                  To begin a serious practice of Voicework, I auditioned to narrate public domain audiobooks. After auditioning for a position by submitting a sample of me narrating the first chapter of The Adventures of Tom Sawyer, I was accepted and worked with the channel's owner to narrate 7 short stories. 
+                </Typography>
+                <Link className="mt-[1.5rem]" href="https://youtube.com/playlist?list=PLzoiUUk7jJMJ83QMWI5Q6CqIbG8jWPsea&si=UalW95hffGnsK80g" target="_blank">Link to playlist containing all MackMakesAudiobooks narration</Link>
+              </Box>
             </PortfolioDropdown>
           </Box>
 

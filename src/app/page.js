@@ -83,7 +83,7 @@ export default function Home() {
                 <WebDevelopmentProjects /> 
               </Box>
             
-              <Box selection="Technical Writing">
+              <Box selection="Writing">
                 <TechnicalWritingSection />
               </Box>
 

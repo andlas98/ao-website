@@ -2,16 +2,16 @@ import React from "react";
 import { Box, Typography, Link} from "@mui/material";
 import VoiceWorkSection from "@/components/voiceworkSection";
 import ContactPill from "@/components/contactPill";
+import DownloadRoundedIcon from "@mui/icons-material/DownloadRounded";
 import Navbar from "@/components/navbar";
 import LayeredPaper from "@/components/layeredPaper";
 import LavaBlob from "@/components/lavaBlob";
 import AndrewPortrait from "../../public/AndrewPortrait";
-import DownloadRoundedIcon from "@mui/icons-material/DownloadRounded";
 import PortfolioDropdown from "@/components/portfolioDropdown";
 import WebDevelopmentProjects from "@/components/webDevelopmentProjectsSection";
 import TechnicalWritingSection from "@/components/technicalWritingCardSection";
 import { StyledEngineProvider } from "@mui/material";
-import { GitHub, LinkedIn } from "@mui/icons-material";
+import { GitHub, LinkedIn, Folder} from "@mui/icons-material";
 
 export default function Home() { 
   const splashIntroContent = (
@@ -21,9 +21,11 @@ export default function Home() {
         <span className="deepColor">within and beyond the technological space</span>.
       </Typography>
       <Box className="contact-links-container flex flex-row gap-x-[1rem] mt-[2rem] max-sm:flex-col max-sm:w-fit max-sm:gap-y-[1rem] max-sm:justify-center max-sm:items-center mx-[auto]">
-       <ContactPill link="https://github.com/andlas98" logo={<GitHub />} linkTo="GitHub" />
+       <ContactPill link="https://github.com/andlas98" logo={<GitHub />} linkTo="GitHub" targetBlank={true} />
 
-       <ContactPill link="https://www.linkedin.com/in/andrew-ohakam/" logo={<LinkedIn />} linkTo="Linkedin" />
+       <ContactPill link="https://www.linkedin.com/in/andrew-ohakam/" logo={<LinkedIn />} linkTo="Linkedin" targetBlank={true} />
+       
+       <ContactPill link="#portfolio-section" logo={<Folder />} linkTo="Portfolio" targetBlank={false} />
       </Box>
     </Box>
   );
@@ -37,9 +39,11 @@ export default function Home() {
       <Typography variant="body2">
        See the Portfolio section below to see what I dabble in!
       </Typography>
-      <Box className="mt-[3rem]">
+      {/* <Box className="mt-[3rem]">
         <ContactPill link="https://1drv.ms/w/s!Aug_bt4TU7qlgeBRNg0C7YiyPmFYVQ?e=RxlfHJ" logo={<DownloadRoundedIcon />} linkTo="View Resume (Web Development)" />
-      </Box>
+        <ContactPill link="https://1drv.ms/w/s!Aug_bt4TU7qlgeBRNg0C7YiyPmFYVQ?e=RxlfHJ" logo={<DownloadRoundedIcon />} linkTo="View Resume (Writing)" />
+        <ContactPill link="https://1drv.ms/w/s!Aug_bt4TU7qlgeBRNg0C7YiyPmFYVQ?e=RxlfHJ" logo={<DownloadRoundedIcon />} linkTo="View Resume (Voicework)" />
+      </Box> */}
 
     </Box>
   );
@@ -74,7 +78,7 @@ export default function Home() {
                 <Box className="flex justify-center items-center max-md:flex-col">
                   <Box className="flex mt-[0.5rem] max-md:items-center max-md:mb-[1rem]">
                     <Typography className="">GitHub Contributions</Typography>
-                    <Link href="https://github.com/andlas98" target="_blank" className="text-white max-md:ml-[1rem]">
+                    <Link href="https://github.com/andlas98" target="_blank" rel="noopener" className="text-white max-md:ml-[1rem]">
                       <GitHub className="w-[3rem] h-[3rem]"/>
                     </Link>
                   </Box>

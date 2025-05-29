@@ -7,9 +7,9 @@ export default function TechnicalWritingSection() {
     return (
         <Box>
             <TechnicalWritingCard
-            documentTitle={"Getting Started with Microsoft To-Dos"}
-            documentLink={"https://1drv.ms/w/s!Aug_bt4TU7qlgecPIv4cnmC57TMgLg?e=CNKGWG"}
-            documentDescription={"I created this mini-manual as a guide for employees at a non-profit company to better track how they record and report their weekly tasks. The company was renamed to Doe LLC in the document for anonymity\'s sake"}
+            documentTitle={"Technical Writing"}
+            documentLink={"https://1drv.ms/f/c/a5ba5313de6e3fe8/EtIDU8bxnHdMhU4CsSUzdoEBDd42hdlYknzZCIZ6JgssxQ?e=8qap6V"}
+            documentDescription={"The link below contains a list of all my technical writing projects, including company policies and documentation."}
             />
         </Box>
     );

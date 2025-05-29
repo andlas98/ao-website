@@ -1,4 +1,4 @@
-import { Button, Box, Typography} from "@mui/material"
+import { Button, Box, Typography, Link} from "@mui/material"
 
 export default function TechnicalWritingCard(props){
     let { documentTitle, documentDescription, documentLink } = props;
@@ -13,11 +13,11 @@ export default function TechnicalWritingCard(props){
                 </Typography>
             </Box>
             <Box className="w-auto flex align-top mx-auto max-md:mt-[1rem]">
-                <Button className="bg-deepRed h-fit align-center hover:bg-deepRed max-md:px-[2rem]" href={documentLink}>
-                    <Typography className="technicalWritingCardButton text-white" variant="button">
+                <Link className="bg-deepRed h-fit align-center hover:bg-deepRed rounded-reg max-md:px-[2rem]" href={documentLink} target="_blank">
+                    <Typography className="technicalWritingCardButton p-[0.5rem] block text-white no-underline" variant="button">
                         View
                     </Typography>
-                </Button>
+                </Link>
             </Box>
         </Box>
     )

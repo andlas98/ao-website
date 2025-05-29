@@ -1,4 +1,3 @@
-import VoiceWorkCard from "./VoiceWorkCard";
 import { Box } from "@mui/material";
 import TechnicalWritingCard from "./technicalWritingCard";
 

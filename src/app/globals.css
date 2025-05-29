@@ -187,7 +187,8 @@ body {
 }
 
 .webDevProjectCard{
-  width: 33%;
+  width: 32%;
+  margin-bottom: 2rem;
 }
 
 .webDevProjectDetails, .webDevProjectLinks{
@@ -213,7 +214,7 @@ body {
 .webDevProjectDescription {
   margin-top: 0.75rem;
   line-height: 30px;
-  min-height: 11.25rem;
+  min-height: 20rem;
 }
 
 .webDevProjectLinks{

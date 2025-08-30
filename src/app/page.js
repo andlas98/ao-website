@@ -17,8 +17,8 @@ export default function Home() {
   const splashIntroContent = (
     <Box className="text-white">
       <Typography variant="body1">
-        Hi! My name is <span className="deepColor">Andrew Ohakam</span>. <br />I{"\'"}m a Technology Specialist creating experiences{" "}
-        <span className="deepColor">within and beyond the technological space</span>.
+        Hi! My name is <span className="deepColor">Andrew Ohakam</span>. <br />I{"\'"}m a frontend developer creating experiences{" "}
+        <span className="deepColor">web experiences</span>.
       </Typography>
       <Box className="contact-links-container flex flex-row gap-x-[1rem] mt-[2rem] max-sm:flex-col max-sm:w-fit max-sm:gap-y-[1rem] max-sm:justify-center max-sm:items-center mx-[auto]">
        <ContactPill link="https://github.com/andlas98" logo={<GitHub />} linkTo="GitHub" targetBlank={true} />
@@ -33,18 +33,12 @@ export default function Home() {
   const aboutMeContent = (
     <Box>
       <Typography variant="body2">
-        As a creative, my motto is to &quot;learn by doing&quot;, and I live that by simply doing! 
+        I mainly design and develop web sites and web applications. One of my mottos is to &quot;learn by doing&quot;, and I follow that by developing web products for others to see.
       </Typography>
       <br />
       <Typography variant="body2">
-       See the Portfolio section below to see what I dabble in!
+       I also practice other disciplines on the side. See the Portfolio section below to see some of what I dabble in!
       </Typography>
-      {/* <Box className="mt-[3rem]">
-        <ContactPill link="https://1drv.ms/w/s!Aug_bt4TU7qlgeBRNg0C7YiyPmFYVQ?e=RxlfHJ" logo={<DownloadRoundedIcon />} linkTo="View Resume (Web Development)" />
-        <ContactPill link="https://1drv.ms/w/s!Aug_bt4TU7qlgeBRNg0C7YiyPmFYVQ?e=RxlfHJ" logo={<DownloadRoundedIcon />} linkTo="View Resume (Writing)" />
-        <ContactPill link="https://1drv.ms/w/s!Aug_bt4TU7qlgeBRNg0C7YiyPmFYVQ?e=RxlfHJ" logo={<DownloadRoundedIcon />} linkTo="View Resume (Voicework)" />
-      </Box> */}
-
     </Box>
   );
 

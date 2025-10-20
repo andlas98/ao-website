@@ -7,6 +7,13 @@ export default async function WebDevelopmentProjects() {
         <div className="projectsBox">
             <WebDevProjectCard
                 poster={CodeSymbol}
+                projectTitle="Libredoro"
+                yearOfInitialRelease="In Development, Estimated Release 2025"
+                projectDescription="A lightwight, customizable Pomodoro timer application. Built with Electron, React, and TailwindCSS."
+                gitHubLink="https://github.com/andlas98/libredoro-test"
+            />
+            <WebDevProjectCard
+                poster={CodeSymbol}
                 projectTitle="Gaming News Aggregator"
                 yearOfInitialRelease="2024"
                 projectDescription="A remake of a website I created in the early 2020's. Constructed with React Typescript and Tailwind. Hosted with Netlify."

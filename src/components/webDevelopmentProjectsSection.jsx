@@ -1,10 +1,19 @@
 import WebDevProjectCard from './WebDevProjectCard';
 import CodeSymbol from "../imgs/keyboard-open.svg"
+import HandshakeRoundedIcon from '@mui/icons-material/HandshakeRounded';
+import TimerOutlinedIcon from '@mui/icons-material/TimerOutlined';
 
 export default async function WebDevelopmentProjects() {    
 
     return (
         <div className="projectsBox">
+            <WebDevProjectCard
+                poster={CodeSymbol}
+                projectTitle="Empower Girls"
+                yearOfInitialRelease="2025"
+                projectDescription="I was contacted to redesign a website for a program aimed at enriching middle-school girls based in Oakland. Built with Squarespace."
+                projectLink="https://www.empowergirlsprogram.com/"
+            />
             <WebDevProjectCard
                 poster={CodeSymbol}
                 projectTitle="Libredoro"

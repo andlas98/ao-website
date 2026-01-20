@@ -17,8 +17,7 @@ export default function Home() {
   const splashIntroContent = (
     <Box className="text-white">
       <Typography variant="body1">
-        Hi! My name is <span className="deepColor">Andrew Ohakam</span>. <br />I{"\'"}m a frontend developer creating experiences{" "}
-        <span className="deepColor">web experiences</span>.
+        Hi! My name is <span className="deepColor">Andrew Ohakam</span>. <br />I{"\'"}m a Technology Specialist with a focus on the <span className="deepColor">Information Technology and Web Development niches</span>.
       </Typography>
       <Box className="contact-links-container flex flex-row gap-x-[1rem] mt-[2rem] max-sm:flex-col max-sm:w-fit max-sm:gap-y-[1rem] max-sm:justify-center max-sm:items-center mx-[auto]">
        <ContactPill link="https://github.com/andlas98" logo={<GitHub />} linkTo="GitHub" targetBlank={true} />
@@ -33,11 +32,19 @@ export default function Home() {
   const aboutMeContent = (
     <Box>
       <Typography variant="body2">
-        I mainly design and develop web sites and web applications. One of my mottos is to &quot;learn by doing&quot;, and I follow that by developing web products for others to see.
+        I am a technology specialist with several years of professionally tested experience in web development and Information Technology. 
       </Typography>
       <br />
       <Typography variant="body2">
-       I also practice other disciplines on the side. See the Portfolio section below to see some of what I dabble in!
+        In my web development experience, I have worn designer and developer hats, building visual mockups with respect to responsive design, then developing them. I live for smooth, striking user interfaces and have worked for businesses in various industries, from Entertainment to Finance.
+      </Typography>
+      <br />
+      <Typography variant="body2">
+        In Information Technology, I{"\'"}ve worked on managing user accounts and licenses, providing remote support across Windows and mobile devices, and documented issues and their resolution through ticketing systems. I{"\'"}ve set up workstations for staff members and monitored website analytics to observe trends. I{"\'"}ve also created and curated software onboarding materials and supported company-wide tech policies in collaboration with executives and cybersecurity teams.
+      </Typography>
+      <br />
+      <Typography variant="body2">
+        I also practice other disciplines on the side. See the Portfolio section below to see some of what I dabble in!
       </Typography>
     </Box>
   );

@@ -12,7 +12,7 @@ export default async function WebDevelopmentProjects() {
                 projectTitle="Empower Girls"
                 yearOfInitialRelease="2025"
                 projectDescription="I was contacted to redesign a website for a program aimed at enriching middle-school girls based in Oakland. Built with Squarespace."
-                projectLink="https://www.empowergirlsprogram.com/"
+                projectLink="www.empowergirlsprogram.org/"
             />
             <WebDevProjectCard
                 poster={CodeSymbol}

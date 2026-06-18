@@ -1,7 +1,4 @@
 import WebDevProjectCard from './WebDevProjectCard';
-import CodeSymbol from "../imgs/keyboard-open.svg"
-import HandshakeRoundedIcon from '@mui/icons-material/HandshakeRounded';
-import TimerOutlinedIcon from '@mui/icons-material/TimerOutlined';
 import { Palette, AutoAwesome, Female , Gamepad , CleaningServices, Brush} from '@mui/icons-material';
 
 export default async function WebDevelopmentProjects() {    

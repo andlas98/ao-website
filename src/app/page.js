@@ -16,7 +16,7 @@ export default function Home() {
   const splashIntroContent = (
     <Box className="text-white">
       <Typography variant="body1">
-        Hi! My name is <span className="deepColor">Andrew Ohakam</span>. <br />I{"\'"}m a Technology Specialist with a focus on the <span className="deepColor">Information Technology and Web Development niches</span>.
+        Hi! My name is <span className="deepColor">Andrew Ohakam</span>. <br />I{"\'"}m a Technology Specialist with a focus on the <span className="deepColor">Web Development and Information Technology niches</span>.
       </Typography>
       <Box className="contact-links-container flex flex-row gap-x-[1rem] mt-[2rem] max-sm:flex-col max-sm:w-fit max-sm:gap-y-[1rem] max-sm:justify-center max-sm:items-center mx-[auto]">
        <ContactPill link="https://github.com/andlas98" logo={<GitHub />} linkTo="GitHub" targetBlank={true} />
@@ -48,6 +48,18 @@ export default function Home() {
     </Box>
   );
 
+  const favoriteTechnologiesContent = (
+    <Box>
+      <Typography variant="body2">
+        <span className="deepColor">Web Development:</span> JavaScript, TypeScript, NextJS, React, HTML5, CSS3, Visual Studio Code, Tailwind, Git/GitHub, MongoDB, Jira, Figma,Website Building Tools (WordPress, Elementor, Divi, GoDaddy)
+      </Typography>
+      <br />
+      <Typography variant="body2">
+        <span className="deepColor">Information Technology:</span> ControlMap, Azure Active Directory, Microsoft 365 Admin Center, Windows 11, Microsoft Office Suite, Microsoft 365, Hostinger, WordPress, Connectwise Help Desk Ticketing System
+      </Typography>
+    </Box>
+  )
+
   return (
     <div>
        <StyledEngineProvider injectFirst>
@@ -68,6 +80,10 @@ export default function Home() {
           <Box className="aboutSectionBox" id="about-section">
             <Typography className="sectionHeader">About Me</Typography>
             <LayeredPaper content={aboutMeContent} />
+          </Box>
+          <Box className="aboutSectionBox" id="favorite-technologies-section">
+            <Typography className="sectionHeader">Favorite Technologies</Typography>
+            <LayeredPaper content={favoriteTechnologiesContent} />
           </Box>
 
           <Box className="portfolioSectionBox" id="portfolio-section">

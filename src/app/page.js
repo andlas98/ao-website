@@ -2,7 +2,6 @@ import React from "react";
 import { Box, Typography, Link} from "@mui/material";
 import VoiceWorkSection from "@/components/voiceworkSection";
 import ContactPill from "@/components/contactPill";
-import DownloadRoundedIcon from "@mui/icons-material/DownloadRounded";
 import Navbar from "@/components/navbar";
 import LayeredPaper from "@/components/layeredPaper";
 import LavaBlob from "@/components/lavaBlob";
